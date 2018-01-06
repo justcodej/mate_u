@@ -10,7 +10,6 @@ button,input,select,textarea{font-size:100%}
 legend{color:#000}
 small{font-size:12px}
 hr{border:none;height:1px}
-a{text-decoration:none}
 
 a:link,a:visited{text-decoration:none; color:#999;}
 .cle:after{content:".";display:block;height:0;clear:both;visibility:hidden}

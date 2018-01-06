@@ -1,33 +1,112 @@
-#nav{
-    background-color: #fff;
-    box-shadow: 0 3px 10px rgba(0,0,0,.2);
-}
-#nav .container{
-    width: 1280px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-#nav .container a.logo{
-    float: left;
-    padding: 23px 0;
-}
-#nav .container ul.menu{
-    display: flex;
-    float: right;
-}
-#nav .container ul.menu>li{
-    padding: 34px 25px;
-}
-#nav .container ul.menu>li.active a{
-    color: #e84117;
-}
-#nav .container ul.menu>li>a{
-    color: #333;
-    transition: .4s;
+body{
+  overflow-x: hidden; }
+
+/*导航开始*/
+#nav{ position: fixed; top:0; left: 0; z-index: 1; width: 100%; background-color: #fff; transition: .4s; box-shadow: 0 3px 10px rgba(0,0,0,.2); }
+#nav .container{ max-width: 1280px; margin: 0 auto; }
+#nav .container a.logo{ display: flex; float: left; padding: 15px 0; margin-left: 20px; user-select: none; }
+#nav .container a.logo p{ display: none; }
+#nav .container a.logo img{ height: 20px; }
+#nav .container a.logo i.line{ display: none; }
+#nav .container ul.menu{ display: none; }
+#nav .container ul.menu>li{ position: relative; transition: .4s; padding: 28px 15px; }
+#nav .container ul.menu>li:last-child{ padding-right: 0; }
+#nav .container ul.menu>li.active a{ color: #e84117; }
+#nav .container ul.menu>li>a{ color: #333; transition: .4s; }
+#nav .container ul.menu>li>i.icon{ display: inline-block; width: 6px; height: 3px; margin-left: 5px; background: url("../image/about/nav_arrow.png")no-repeat; }
+#nav .container .search{ display: none; }
+#nav .container .search input{ border: none; display: inline-block; outline: none; color: #999; width: 100%; line-height: 22px; font-size: 12px; margin-left: 15px; }
+#nav .container .search a.icon{ display: inline-block; width: 16px; height: 12px; margin-top: 5px; background: url("../image/about/search.png")no-repeat; margin-right: 15px; }
+#nav .container ul.menu>li>ul{ position: absolute; top: 60px; left: 0; width: 210px; background: #fff; box-shadow: 0 0 5px rgba(0,0,0,.3); }
+#nav .container ul.menu>li>ul>li{ height: 48px; border-bottom: 1px solid #e6e6e6; }
+#nav .container ul.menu>li>ul>li:last-child{ border-bottom: none; }
+#nav .container ul.menu>li>ul>li>a{ display: block; text-indent: 20px; line-height: 48px; font-size: 13px; color: #757575; }
+#nav .container ul.menu>li>ul>li.active{ background-color: #f2f2f2; }
+#nav .container ul.menu>li>ul>li.active a{ color: #757575; }
+#nav .container a.nav_tab{ position: absolute; right: 20px; top: 10px; display: block; width: 42px; transition: .4s; }
+#nav .container a.nav_tab:hover .bar{ background-color: #b22a00; }
+#nav .container a.nav_tab .bar{ display: block; margin: 6px auto 0; width: 90%; height: 2px; background-color: #ff3c00; transition: .4s; }
+/*小导航*/
+#maskLayer{ display: block; position: fixed; z-index: 1; top: -100vh; width: 100vw; height: 100vh; background: rgba(255,60,0,.9); transition: .4s; }
+#smallMenu{ position: fixed; user-select: none; width: 100vw; overflow: hidden; z-index: 1; top: -100vh; display: block; margin: 50px auto 0; transition: .4s; }
+#smallMenu .smallUl{ padding: 20px 40px; }
+#smallMenu .smallUl>li{ padding: 10px 0; text-align: right; }
+#smallMenu .smallUl>li>a{ font-size: 22px; font-family: "Microsoft YaHei"; color: #f1f1f1; }
+#smallMenu .smallUl>li>ul.listDown>li{ padding: 10px 0; }
+#smallMenu .smallUl>li>ul.listDown>li>a{ font-size: 18px; color: #f1f1f1; margin-left: 15px; }
+/* banner */
+#main .banner{ height: 100vh; position: relative; }
+#main .banner .bg{ height: 84vh; width: 100vw; background: url("../image/about/guanyu_02.png")no-repeat center/cover; }
+#main .banner .bg .title{ font-size: 40px; transition: .4s; color: #666; text-align: center; font-weight: lighter; padding-top: 25vh; }
+#main .banner .bg .subtitle{ color: #e84117; transition: .4s; font-size: 56px; font-weight: lighter; text-align: center; }
+#main .banner .redBar{ display: none; position: absolute; bottom: 0; left: 0; width: 100vw; height: 16vh; background-color: #e23f17; }
+#main .banner .content{ position: relative; max-width: 1280px; height: 16vh; margin: 0 auto; }
+#main .banner .content .aboutInfo{ position: absolute; bottom: 0; left: 0; width: auto; padding: 28px 56px; background-color: #e23f17; box-shadow: 0 0 10px rgba(0,0,0,.3); height: 189px; }
+#main .banner .content .aboutInfo .title{ color: #fff; font-size: 24px; margin-bottom: 20px; }
+#main .banner .content .aboutInfo .info{ font-size: 14px; color: #fff; line-height: 24px; }
+#main .banner .content .aboutInfo .info1{ margin-bottom: 10px; }
+/*team*/
+#main .team{
+  height: 1660px;
+  background: url("../image/about/team_bg.jpg");
 }
 
-#nav .container .search{
-    float: right;
-    height: 22px;
-    border: 1px solid #e6e6e6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*没有小于768px，是因为Bootstrap3以移端优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+  #main .banner .content .aboutInfo{ width: 388px; }
+  #main .banner .bg .title{ font-size: 64px; }
+  #main .banner .bg .subtitle{ font-size: 80px; }
+  #main .banner .redBar{ display: block; }
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+  /*大导航*/
+  #nav .container a.logo{ display: flex; float: left; padding: 23px 0; margin: auto; }
+  #nav .container a.logo img{ height: 26px; margin-top: 3px; }
+  #nav .container ul.menu{ display: flex; float: right; margin-right: 54px; }
+  #nav .container .search{ float: right; height: 22px; width: 156px; border: 1px solid #e6e6e6; border-radius: 11px; margin: 28px 0; display: flex; }
+  #nav .container a.nav_tab{ display: none; }
+  /*小导航*/
+  #smallMenu { display: none; }
+  #maskLayer{ display: none; }
+}
+
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+  #nav .container a.logo p{ display: block; line-height: 32px; font-size: 16px; color: #474241; margin-left: 10px; }
+  #nav .container a.logo i.line{ display: block; background: #000; width: 1px; height: 32px; margin-left: 10px; }
+  #nav .container ul.menu>li{ position: relative; padding: 28px 25px; }
 }

@@ -4,31 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="Shortcut Icon" href="./image/favicon.ico">
+    <link rel="Shortcut Icon" href="image/about/favicon.ico">
     <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./css/nav.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>nav</title>
 </head>
 <body>
+    <!--大导航-->
     <nav id="nav">
         <div class="container">
             <a href="#" class="logo">
-                <img src="./image/logo.png" alt="logo">
+                <img src="image/about/logo.png" alt="logo">
+                <i class="line"></i>
+                <p class="text">帮您解决服务难题</p>
             </a>
             <div class="search">
                 <input type="text" placeholder="请输入关键字">
-                <i class="icon"></i>
+                <a href="#" class="icon"></a>
             </div>
             <ul class="menu">
                 <li CLASS="active"><a href="#">首页</a></li>
                 <li><a href="#">关于Mate·U</a></li>
                 <li><a href="#">产品服务</a></li>
-                <li><a href="#">交易数据</a></li>
+                <li>
+                    <a href="#">交易数据</a><i class="icon"></i>
+                    <!--<ul>-->
+                        <!--<li><a href="#">金融早参</a></li>-->
+                        <!--<li class="active"><a href="#">往期回顾</a></li>-->
+                    <!--</ul>-->
+                </li>
                 <li><a href="#">汇市财经</a></li>
                 <li><a href="#">市场新闻</a></li>
             </ul>
+            <a href="javascript:" class="nav_tab">
+                <i class="bar bar1"></i>
+                <i class="bar bar2"></i>
+                <i class="bar bar3"></i>
+            </a>
+            <div class="clear"></div>
         </div>
     </nav>
+    <!--遮罩层-->
+    <div id="maskLayer"></div>
+    <!--小导航-->
+    <div id="smallMenu">
+        <ul class="smallUl">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于Mate·U</a></li>
+            <li><a href="#">产品服务</a></li>
+            <li>
+                <a href="#">交易数据</a>
+                <ul class="listDown">
+                    <li><a href="#">金融早参</a></li>
+                    <li class="active"><a href="#">往期回顾</a></li>
+                </ul>
+            </li>
+            <li><a href="#">汇市财经</a></li>
+            <li><a href="#">市场新闻</a></li>
+        </ul>
+    </div>
+    <main id="main">
+        <div class="banner">
+            <div class="bg">
+                <p class="title">开启全新的</p>
+                <p class="subtitle">服务传播新模式</p>
+            </div>
+            <div class="redBar"></div>
+            <div class="content">
+                <div class="aboutInfo">
+                    <p class="title">关于我们</p>
+                    <p class="info info1">当前外汇代理商面临着资源转化率低、维护服务简陋这两大难题。平台商普遍只提供财经信息、技术分析、线下活动等等服务。</p>
+                    <p class="info info2">匮乏的信息量不足以支撑起代理商和投资者需求。Mate·U的目的便是帮助解放平台商，支撑起代理商所需要的服务支持网络。</p>
+                </div>
+            </div>
+        </div>
+        <div class="team"></div>
+    </main>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>
