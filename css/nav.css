@@ -46,10 +46,10 @@ body{
 #main .banner .content .aboutInfo .info{ font-size: 14px; color: #fff; line-height: 24px; }
 #main .banner .content .aboutInfo .info1{ margin-bottom: 10px; }
 /*team*/
-#main .team{
-  height: 1660px;
-  background: url("../image/about/team_bg.jpg");
-}
+#main .team{ height: 1660px; background: url("../image/about/team_bg.jpg"); }
+#main .team .content{ max-width: 1280px; margin: 0 auto; }
+#main .team .content .title{ padding-top: 57px; }
+#main .team .content .title,#main .team .content .subtitle{ font-size: 30px; transition: .4s; font-family: "Arial Black"; color: rgba(255,255,255,.1); }
 
 
 
@@ -88,6 +88,8 @@ body{
   #main .banner .bg .title{ font-size: 64px; }
   #main .banner .bg .subtitle{ font-size: 80px; }
   #main .banner .redBar{ display: block; }
+  /*team*/
+  #main .team .content .title,#main .team .content .subtitle{ font-size: 65px; }
 }
 
 /* 中等屏幕（桌面显示器，大于等于992px） */
@@ -101,6 +103,8 @@ body{
   /*小导航*/
   #smallMenu { display: none; }
   #maskLayer{ display: none; }
+  /*team*/
+  #main .team .content .title,#main .team .content .subtitle{ font-size: 90px; }
 }
 
 
