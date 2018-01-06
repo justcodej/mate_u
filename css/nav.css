@@ -1,0 +1,33 @@
+#nav{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+#nav .container{
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#nav .container a.logo{
+    float: left;
+    padding: 23px 0;
+}
+#nav .container ul.menu{
+    display: flex;
+    float: right;
+}
+#nav .container ul.menu>li{
+    padding: 34px 25px;
+}
+#nav .container ul.menu>li.active a{
+    color: #e84117;
+}
+#nav .container ul.menu>li>a{
+    color: #333;
+    transition: .4s;
+}
+
+#nav .container .search{
+    float: right;
+    height: 22px;
+    border: 1px solid #e6e6e6;
+}
