@@ -1,5 +1,7 @@
 body{
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 7000px;
+}
 
 /*导航开始*/
 #nav{ position: fixed; top:0; left: 0; z-index: 1; width: 100%; background-color: #fff; transition: .4s; box-shadow: 0 3px 10px rgba(0,0,0,.2); }
@@ -46,16 +48,68 @@ body{
 #main .banner .content .aboutInfo .info{ font-size: 14px; color: #fff; line-height: 24px; }
 #main .banner .content .aboutInfo .info1{ margin-bottom: 10px; }
 /*team*/
-#main .team{ height: 1660px; background: url("../image/about/team_bg.jpg"); }
+#main .team{  background: url("../image/about/team_bg.jpg"); }
 #main .team .content{ max-width: 1280px; margin: 0 auto; }
-#main .team .content .title{ padding-top: 57px; }
-#main .team .content .title,#main .team .content .subtitle{ font-size: 30px; transition: .4s; font-family: "Arial Black"; color: rgba(255,255,255,.1); }
-
-
-
-
-
-
+#main .team .content>.title{ padding-top: 57px; }
+#main .team .content>.title,#main .team .content>.subtitle{ font-size: 30px; transition: .4s; font-family: "Arial Black"; color: rgba(255,255,255,.1); }
+/*part odd*/
+#main .team .content>.info{ font-size: 25px; color: #fff; margin-bottom: 50px; transition: .4s; }
+#main .team .content .part{ display: flex; flex-flow: row wrap; -webkit-flex-flow: row wrap; overflow: hidden; padding-left: auto; transition: .4s; }
+#main .team .content .part .poster{ position: relative; margin: 0 auto; float: none; width: auto; height: auto; overflow: hidden; }
+#main .team .content .part .poster .redLine{ display: none; position: static; bottom: 0; left: 0; width: 270px; height: 346px; border: 2px solid #e84117; }
+#main .team .content .part .poster img.img{ display: block; position: static; width: auto; height: auto; }
+#main .team .content .part .message{ position: relative; width: auto; height: auto; padding: 20px; float: none; margin-top: 30px; }
+#main .team .content .part .message p.title>span{ font-size: 20px; color: #e84117; margin-right: 25px; }
+#main .team .content .part .message p.title>b{ font-size: 28px; color: #fff; font-weight: lighter; }
+#main .team .content .part .message>.info{ position: static; right: 0; top: 86px; width: auto; height: auto; }
+#main .team .content .part .message>.info p.introduce{ font-size: 20px; color: #e84117; }
+#main .team .content .part .message>.info p.text{ color: #fff; font-size: 14px; }
+#main .team .content .part .message>.info p.text1{ margin-top: 17px; }
+#main .team .content .part .message>.info p.text2{ margin-top: 17px; }
+#main .team .content .part .message>.info p.text3{ margin-top: 17px; line-height: 24px; }
+/*part even*/
+#main .team .content .even .poster{ float: none; order: 1; -webkit-order: 1; }
+#main .team .content .even .message{ float: none; order: 2; -webkit-order: 2; }
+#main .team .content .part1,#main .team .content .part2,#main .team .content .part3,#main .team .content .part4{ padding-bottom: 150px; }
+/*iconTab*/
+#main .iconTab{ display: none; border-bottom: 1px solid #eee; height: 130px; }
+#main .iconTab .content{ position: relative; width: 1280px; margin: 0 auto; height: 100%; }
+#main .iconTab .content>ul{ text-align: center; height: 100%; }
+#main .iconTab .content>ul>li{ display: inline-block; padding-right: 72px; margin-top: 32px; cursor: pointer; }
+#main .iconTab .content>ul>li:last-child{ padding-right: 0; }
+#main .iconTab .content>ul>li i.icon{
+  display: block;
+  margin: 0 auto;
+  width: 44px;
+  height: 44px;
+  background: url("../image/about/icon_1.png") no-repeat;
+}
+#main .iconTab .content>.line{
+  position: absolute;
+  left: 145px;
+  width: 60px;
+  height: 2px;
+  background-color: #e84117;
+}
+#main .coreTitle{
+  height: 236px;
+  background-color: #fafafa;
+}
+#main .coreTitle .title{
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  padding-top: 36px;
+}
+#main .coreTitle .subtitle{
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 30px;
+}
+#main .coreTitle .subtitle:last-child{
+  margin-top: 10px;
+}
 
 
 
@@ -89,7 +143,19 @@ body{
   #main .banner .bg .subtitle{ font-size: 80px; }
   #main .banner .redBar{ display: block; }
   /*team*/
-  #main .team .content .title,#main .team .content .subtitle{ font-size: 65px; }
+  #main .team .content>.title,#main .team .content>.subtitle{ font-size: 65px; }
+  #main .team .content>.info{ font-size: 36px; margin-bottom: 108px; }
+  /*odd*/
+  #main .team .content .part{ display: block; padding-left: 67px; }
+  #main .team .content .part .poster{  margin: auto; float: left; width: 332px; height: 394px; }
+  #main .team .content .part .poster .redLine{ position: absolute; display: block; }
+  #main .team .content .part .poster img.img{ position: absolute; bottom: 18px; left: 48px; width: 284px; height: 376px; }
+  #main .team .content .part .message{ position: relative; width: 532px; padding: auto; height: 263px; float: right; margin-top: 70px; }
+  #main .team .content .part .message>.info{ position: absolute; width: 424px; height: 175px; }
+  #main .team .content .even .poster{ float: right; order: 0; -webkit-order: 0; }
+  #main .team .content .even .message{ float: left; order: 0; -webkit-order: 0; }
+  /*iconTab*/
+  #main .iconTab{ display: block; }
 }
 
 /* 中等屏幕（桌面显示器，大于等于992px） */
@@ -104,7 +170,7 @@ body{
   #smallMenu { display: none; }
   #maskLayer{ display: none; }
   /*team*/
-  #main .team .content .title,#main .team .content .subtitle{ font-size: 90px; }
+  #main .team .content>.title,#main .team .content>.subtitle{ font-size: 90px; }
 }
 
 
