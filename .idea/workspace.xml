@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6d2c4c-c3a8-4d4a-a3f8-4f8b9d351264" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/专业训练营1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/专业训练营2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/交易跟单1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/交易跟单2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/代理商培训学院图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/导师团队1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/导师团队2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/左侧大图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/技术分析1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/技术分析2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/直播课堂1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/直播课堂2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/线上体验式培训图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/股市直播室图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/股市聊聊吧图.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/股票专栏1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/股票专栏2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/自动化系统1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/about/自动化系统2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/nav.css" afterPath="$PROJECT_DIR$/css/nav.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -304,12 +283,12 @@
       <workItem from="1515222543636" duration="2814000" />
       <workItem from="1515225477590" duration="7000" />
       <workItem from="1515225506109" duration="6983000" />
-      <workItem from="1515375442569" duration="13078000" />
+      <workItem from="1515375442569" duration="13222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35056000" />
+    <option name="totallyTimeSpent" value="35200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="650" y="50" width="1880" height="882" extended-state="0" />
