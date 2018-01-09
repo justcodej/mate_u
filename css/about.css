@@ -4,7 +4,7 @@ body{
 }
 
 /*导航开始*/
-#nav{ position: fixed; top:0; left: 0; z-index: 1; width: 100%; background-color: #fff; transition: .4s; user-select: none; box-shadow: 0 3px 10px rgba(0,0,0,.2); }
+#nav{ position: fixed; top: 0; left: 0; transform: translateY(-100px) scale(1.05); z-index: 1; width: 100%; background-color: #fff; transition: .9s cubic-bezier(.51,.01,0,1); user-select: none; box-shadow: 0 2px 10px rgba(0,0,0,.2); }
 #nav .container{ max-width: 1280px; margin: 0 auto; }
 #nav .container a.logo{ display: flex; float: left; padding: 15px 0; margin-left: 20px; }
 #nav .container a.logo p{ display: none; }
@@ -37,11 +37,11 @@ body{
 #smallMenu .smallUl>li>ul.listDown>li{ padding: 10px 0; }
 #smallMenu .smallUl>li>ul.listDown>li>a{ font-size: 18px; color: #f1f1f1; margin-left: 15px; }
 /* banner */
-#main .banner{ height: 100vh; position: relative; }
-#main .banner .bg{ height: 84vh; width: 100vw; background: url("../image/about/guanyu_02.png")no-repeat center/cover; }
-#main .banner .bg .title{ font-size: 40px; transition: .4s; color: #666; text-align: center; font-weight: lighter; padding-top: 25vh; }
-#main .banner .bg .subtitle{ color: #e84117; transition: .4s; font-size: 56px; font-weight: lighter; text-align: center; }
-#main .banner .redBar{ display: none; position: absolute; bottom: 0; left: 0; width: 100vw; height: 16vh; background-color: #e23f17; }
+#main .banner{ height: 100vh; position: relative; perspective: 1200px; }
+#main .banner .bg{ transition: 1.3s cubic-bezier(.51,.01,0,1); transform: translateY(-100px) scale(1.05); height: 84vh; width: 100vw; opacity: 0; background: url("../image/about/guanyu_02.png")no-repeat center/cover; }
+#main .banner .bg .title{ font-size: 40px; transition: .8s cubic-bezier(.51,.01,0,1); opacity: 0; color: #666; text-align: center; transform: translateY(-100px) scale(1.05); font-weight: lighter; padding-top: 25vh; }
+#main .banner .bg .subtitle{ color: #e84117; transition: .8s cubic-bezier(.51,.01,0,1); opacity: 0; font-size: 56px; transform: translateY(-100px) scale(1.05); font-weight: lighter; text-align: center; }
+#main .banner .redBar{ display: none; transition: .8s cubic-bezier(.51,.01,0,1); position: absolute; bottom: 0; left: 0; width: 0; height: 16vh; background-color: #e23f17; }
 #main .banner .content{ position: relative; max-width: 1280px; height: 16vh; margin: 0 auto; }
 #main .banner .content .aboutInfo{ position: absolute; bottom: 0; left: 0; width: auto; padding: 28px 56px; background-color: #e23f17; box-shadow: 0 0 10px rgba(0,0,0,.3); height: 189px; }
 #main .banner .content .aboutInfo .title{ color: #fff; font-size: 24px; margin-bottom: 20px; }
@@ -186,27 +186,14 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*没有小于768px，是因为Bootstrap3以移端优先设计*/
 /* 小屏幕（平板，大于等于768px） */
 @media (min-width: 768px) {
-  #main .banner .content .aboutInfo{ width: 388px; }
+  #main .banner .content .aboutInfo{ width: 388px; transform-style: preserve-3d; transition: .9s cubic-bezier(.51,.01,0,1); transform: rotateX(10deg) translateY(-20px); opacity: 0; }
   #main .banner .bg .title{ font-size: 64px; }
   #main .banner .bg .subtitle{ font-size: 80px; }
   #main .banner .redBar{ display: block; }
+  #main .banner>.active{ width: 100vw; }
   /*team*/
   #main .team .content>.title,#main .team .content>.subtitle{ font-size: 65px; }
   #main .team .content>.info{ font-size: 36px; margin-bottom: 108px; }
