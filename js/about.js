@@ -22,3 +22,42 @@
         $navBar.css('background-color','#ff3c00');
     }
 })();
+
+// hover
+
+(function () {
+    var $img = $('#main .imgAd .content .adView .img');
+    var $hiddenText = $('#main .imgAd .content .adView .hiddenText');
+
+    $img.hover(function () {
+        $(this).siblings('.hiddenText').css('top','0');
+        $(this).siblings('.hiddenText').find('.line').css('transform','skewY(-4deg)');
+        show($(this))
+    },function () {
+        $(this).siblings('.hiddenText').css('top','260px');
+        $(this).siblings('.hiddenText').find('.line').css('transform','skewY(0deg)');
+        hidden($(this))
+    });
+    $hiddenText.hover(function () {
+        $(this).css('top','0');
+        show($(this))
+    },function () {
+        $(this).css('top','260px');
+        hidden($(this))
+    });
+
+
+    function show(This) {
+        This.siblings('.showText').find('p').css({
+            backgroundColor: '#fff',
+            color: '#333'
+        })
+    }
+    function hidden(This) {
+        This.siblings('.showText').find('p').css({
+            backgroundColor: '#38363c',
+            color: '#fff'
+        })
+    }
+
+})();
