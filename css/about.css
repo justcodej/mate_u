@@ -4,7 +4,7 @@ body{
 }
 
 /*导航开始*/
-#nav{ position: fixed; top: 0; left: 0; transform: translateY(-100px) scale(1.05); z-index: 1; width: 100%; background-color: #fff; transition: .9s cubic-bezier(.51,.01,0,1); user-select: none; box-shadow: 0 2px 10px rgba(0,0,0,.2); }
+#nav{ position: fixed; top: 0; left: 0; transform: translateY(-100px) scale(1.05); z-index: 1; width: 100%; background-color: #fff; transition: .9s cubic-bezier(.51,.01,0,1); user-select: none; box-shadow: 0 0 0 rgba(0,0,0,.2); }
 #nav .container{ max-width: 1280px; margin: 0 auto; }
 #nav .container a.logo{ display: flex; float: left; padding: 15px 0; margin-left: 20px; }
 #nav .container a.logo p{ display: none; }
@@ -15,10 +15,10 @@ body{
 #nav .container ul.menu>li:last-child{ padding-right: 0; }
 #nav .container ul.menu>li.active a{ color: #e84117; }
 #nav .container ul.menu>li>a{ color: #333; transition: .4s; }
-#nav .container ul.menu>li>i.icon{ display: inline-block; width: 6px; height: 3px; margin-left: 5px; background: url("../image/about/nav_arrow.png")no-repeat; }
+#nav .container ul.menu>li>i.icon{ display: inline-block; width: 6px; height: 3px; margin-left: 5px; background: url("../images/about/nav_arrow.png")no-repeat; }
 #nav .container .search{ display: none; }
 #nav .container .search input{ border: none; display: inline-block; outline: none; color: #999; width: 100%; line-height: 22px; font-size: 12px; margin-left: 15px; }
-#nav .container .search a.icon{ display: inline-block; width: 16px; height: 12px; margin-top: 5px; background: url("../image/about/search.png")no-repeat; margin-right: 15px; }
+#nav .container .search a.icon{ display: inline-block; width: 16px; height: 12px; margin-top: 5px; background: url("../images/about/search.png")no-repeat; margin-right: 15px; }
 #nav .container ul.menu>li>ul{ position: absolute; top: 60px; left: 0; width: 210px; background: #fff; box-shadow: 0 0 5px rgba(0,0,0,.3); }
 #nav .container ul.menu>li>ul>li{ height: 48px; border-bottom: 1px solid #e6e6e6; }
 #nav .container ul.menu>li>ul>li:last-child{ border-bottom: none; }
@@ -38,7 +38,7 @@ body{
 #smallMenu .smallUl>li>ul.listDown>li>a{ font-size: 18px; color: #f1f1f1; margin-left: 15px; }
 /* banner */
 #main .banner{ height: 100vh; position: relative; perspective: 1200px; }
-#main .banner .bg{ transition: 1.3s cubic-bezier(.51,.01,0,1); transform: translateY(-100px) scale(1.05); height: 84vh; width: 100vw; opacity: 0; background: url("../image/about/guanyu_02.png")no-repeat center/cover; }
+#main .banner .bg{ transition: 1.3s cubic-bezier(.51,.01,0,1); transform: translateY(-100px) scale(1.05); height: 84vh; width: 100vw; opacity: 0; background: url("../images/about/guanyu_02.png")no-repeat center/cover; }
 #main .banner .bg .title{ font-size: 40px; transition: .8s cubic-bezier(.51,.01,0,1); opacity: 0; color: #666; text-align: center; transform: translateY(-100px) scale(1.05); font-weight: lighter; padding-top: 25vh; }
 #main .banner .bg .subtitle{ color: #e84117; transition: .8s cubic-bezier(.51,.01,0,1); opacity: 0; font-size: 56px; transform: translateY(-100px) scale(1.05); font-weight: lighter; text-align: center; }
 #main .banner .redBar{ display: none; transition: .8s cubic-bezier(.51,.01,0,1); position: absolute; bottom: 0; left: 0; width: 0; height: 16vh; background-color: #e23f17; }
@@ -51,9 +51,9 @@ body{
   padding: 28px 56px;
   transform-style: preserve-3d;
   transition: .9s cubic-bezier(.51,.01,0,1);
-  transform: rotateX(10deg) translateY(-50px);
   opacity: 0;
   background-color: #e23f17;
+  transform: translateY(-50px) scale(1.05);
   box-shadow: 0 0 10px rgba(0,0,0,.3);
   height: 189px;
 }
@@ -61,7 +61,7 @@ body{
 #main .banner .content .aboutInfo .info{ font-size: 14px; color: #fff; line-height: 24px; }
 #main .banner .content .aboutInfo .info1{ margin-bottom: 10px; }
 /*team*/
-#main .team{  background: url("../image/about/team_bg.jpg"); }
+#main .team{  background: url("../images/about/team_bg.jpg"); }
 #main .team .content{ max-width: 1280px; margin: 0 auto; }
 #main .team .content>.title{ padding-top: 57px; }
 #main .team .content>.title,#main .team .content>.subtitle{ font-size: 30px; transition: .4s; font-family: "Arial Black"; color: rgba(255,255,255,.1); }
@@ -90,7 +90,7 @@ body{
 #main .iconTab .content>ul{ text-align: center; height: 100%; }
 #main .iconTab .content>ul>li{ display: inline-block; padding-right: 72px; margin-top: 32px; cursor: pointer; }
 #main .iconTab .content>ul>li:last-child{ padding-right: 0; }
-#main .iconTab .content>ul>li i.icon{ display: block; margin: 0 auto; width: 44px; height: 44px; background: url("../image/about/icon_1.png") no-repeat; }
+#main .iconTab .content>ul>li i.icon{ display: block; margin: 0 auto; width: 44px; height: 44px; background: url("../images/about/icon_1.png") no-repeat; }
 #main .iconTab .content>.line{ position: absolute; left: 145px; width: 60px; height: 2px; background-color: #e84117; }
 #main .coreTitle{ height: 236px; background-color: #fafafa; }
 #main .coreTitle .title{ font-size: 36px; color: #333; text-align: center; padding-top: 36px; }
