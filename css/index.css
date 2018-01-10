@@ -2,20 +2,24 @@
 * @Author: Marte
 * @Date:   2018-01-05 16:55:32
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-08 15:42:56
+* @Last Modified time: 2018-01-09 17:10:21
 */
 .bk{border:1px solid red;}
 *{margin:0; padding:0;}
 body{font-family: "微软雅黑";color:#333;}
 #index_banner video{width:100%;}
-#in_method{width:100%; height:324px; border:1px solid #eee; background-color:#fafafa; text-align:center;font-size:36px; line-height:64px;}
+@media screen and (min-width:800px) {
+    #in_method{height:324px;}
+    #team{height:814px;}
+}
+#in_method{width:100%; border:1px solid #eee; background-color:#fafafa; text-align:center;font-size:36px; line-height:64px;}
 #in_method .in_method_title{ color:#333; padding-top:100px;}
 #in_method .in_method_middle{font-weight:bold;}
 #in_method .in_method_title span{color:#e84117;}
 #in_method .in_method_last{font-size:32px; }
 /* 团队成员样式*/
-#team{width:100%; height:814px; background:url(../images/index/picture_tmbackground.png) no-repeat;}
-#team .team_title{font-size:32px; color:#333; text-align:right; font-weight:bold; padding-top:166px; padding-bottom:60px;}
+#team{width:100%; background:url(../images/index/picture_tmbackground.png) no-repeat; padding-top:72px;}
+#team .team_title{font-size:32px; color:#333; text-align:right; font-weight:bold; padding-top:94px; padding-bottom:60px;}
 #team .team_title .to_bottom{margin-left:17px;}
 #team .team_box{width:100%; background-color:#fff; box-shadow:0 0 10px #f1f1f1; text-align:center;}
 #team .team_member .team_box{position:relative;}
@@ -34,21 +38,23 @@ width:100%; background-color:#fff;}
 #indus h3{font-size:36px; color:#fff; text-align:center; padding:50px 0 66px;}
 #indus .indus_box{padding-left:2%;}
 #indus .indus_box li{float:left; width:12%; height:140px; text-align:center; border-right:1px solid #333; transition:all .5s; position:relative;}
-// #indus .indus_box li:hover{background-color:#e84117; height:178px; border:0;}
-#indus .indus_box .inner{}
-#indus .indus_box li img{margin-top:32px;}
+#indus .indus_box li:hover img{transform:scale(1.2)}
+#indus .indus_box .inner{width:100%; height:100%; background-color:#e84117;}
+#indus .indus_box li img{margin-top:32px; position:relative; z-index:10; transition:all .5s;}
 #indus .indus_last{border-right:0!important;}
-#indus p{color:#fff;}
+#indus p{color:#fff; position:relative; z-index:10;}
 /* 市场新闻 */
 #MKT_new{width:100%; height:2074px; background:url(../images/index/new_bg.jpg) no-repeat;}
 #MKT_new .new_box{width:88%; height:100%; background-color:#fff; margin:0 auto; box-shadow:0 0 10px #e3e2e2; position:relative; top:-43px;}
 #MKT_new .new_box h3{font-size:36px; text-align:center; padding-top:58px; padding-bottom:35px;}
 #MKT_new .new_title{width:250px; border-top:1px solid #eee; border-bottom:1px solid #eee; height:52px; margin:0 auto; margin-bottom:64px;}
-#MKT_new .new_title li{float:left; width:80px; height:28px; text-align:center; font-size:12px; color:#666; line-height:28px; margin-top:12px; }
+#MKT_new .new_title li{float:left; width:80px; height:28px; text-align:center; font-size:12px; color:#666; line-height:28px; margin-top:12px; cursor:pointer;}
 #MKT_new .new_title .new_hover{width:80px;background-color:#e84117; color:#fff;}
 #MKT_new .new_hover{width:80px;background-color:#e84117; color:#fff;}
 #MKT_new .new_title li.new_title1{margin-left:35px; margin-right:10px;}
 #MKT_new .new_title li.new_title2{margin-left:10px; margin-right:35px;}
+#MKT .new_cont_box{position:relative;}
+#MKT .new_cont_box .new_cont{position:absolute; left:0; top:0;}
 #MKT_new .new_cont img{padding-bottom:22px!important;}
 #MKT_new .new_cont>div{border-bottom:1px solid #e6e6e6;}
 #MKT_new .new_cont_middle{padding-top:18px;}
@@ -56,4 +62,5 @@ width:100%; background-color:#fff;}
 #MKT_new .new_cont_right .new_details{float:right; width:80px; height:30px; line-height:30px; border:1px solid #e6e6e6; text-align:center; margin-top:50px;}
 /* 合作伙伴 */
 #cooperate{width:100%; height:330px; text-align:center;}
-#cooperate h3{font-size:36px; padding:20px 0;}
+#cooperate h3{font-size:36px; padding:28px 0;}
+#cooperate img{width:100%;}

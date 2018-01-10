@@ -2,9 +2,9 @@
 * @Author: Marte
 * @Date:   2018-01-06 16:02:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-08 15:18:40
+* @Last Modified time: 2018-01-09 16:13:25
 */
-
+/* 团队成员 */
 (function(){
     var h=$("#team .team_big").height();
     var w=$("#team .team_big").width();
@@ -22,6 +22,7 @@
     })
 
 })();
+/* 团队成员 */
 (function($){
         $.fn.extend({
             show : function(div){
@@ -91,3 +92,15 @@
     $("#indus .indus_box li").each(function(i){
     $(this).show($(".inner").eq(i));
 });
+/* 市场新闻 */
+(function(){
+    (function(){
+        $('#MKT_new .new_title>li').click(function(){
+            $(this).addClass('new_hover').siblings().removeClass('new_hover');
+            var q=$(this).index();
+            $('#MKT_new .new_cont').eq(q).css({'display':'block'}).siblings().css({'display':'none'});
+            console.log()
+        })
+
+    })();
+})()

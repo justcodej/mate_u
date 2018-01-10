@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel = "Shortcut Icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/result.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/kalendar.css">
+    <title>财经日历</title>
+    <script src="js/screenresize.js"></script>
+</head>
+<body>
+    <!-- banner start -->
+    <div class="banner" id="banner">
+        <div class="wrapper">
+            <img src="images/kalendar/kalendar_pic1.png" alt="" class="banner_pic1"  data-scroll-reveal="enter bottom after .1s">
+            <img src="images/kalendar/kalendar_pic2.png" alt="" class="banner_pic2" data-scroll-reveal="enter bottom after .2s">
+            <img src="images/kalendar/kalendar_pic3.png" alt="" class="banner_pic3" data-scroll-reveal="enter bottom after .5s">
+            <img src="images/kalendar/kalendar_pic4.png" alt="" class="banner_pic4" data-scroll-reveal="enter bottom after .6s">
+            <p class="banner_txt1" data-scroll-reveal="enter bottom after .1s">汇市财经</p>
+            <p class="banner_txt2" data-scroll-reveal="enter bottom after .2s">数据分析是指用适当的统计分析方法对收集来的大量数据进行分析，提取有用信息和形成结论而对数据加以详细研究和概括总结的过程。</p>
+        </div>
+    </div>
+<!-- banner end -->
+<!-- data start -->
+    <div class="data" id="data" data-scroll-reveal="enter bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <iframe id="iframe"  height="3000px"  width="100%"  frameborder="0"  scrolling="no"  src="http://rili-d.jin10.com/open.php"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- data end -->
+<script src="js/scrollReveal.min.js"></script>
+<script type="text/javascript">
+      (function($) {
+        'use strict';
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
+      })();
+</script>
+</body>
+</html>
