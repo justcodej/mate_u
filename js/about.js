@@ -86,7 +86,6 @@
         });
     });
     $('#main .banner .bg .subtitle').on('transitionend',function () {
-        $('#main .banner .bg').css('transition','none');
         $('#main .banner .redBar').css('width','100vw');
         $('#main .banner .content .aboutInfo').css({
             opacity:'1',

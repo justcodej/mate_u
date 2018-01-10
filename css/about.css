@@ -43,7 +43,20 @@ body{
 #main .banner .bg .subtitle{ color: #e84117; transition: .8s cubic-bezier(.51,.01,0,1); opacity: 0; font-size: 56px; transform: translateY(-100px) scale(1.05); font-weight: lighter; text-align: center; }
 #main .banner .redBar{ display: none; transition: .8s cubic-bezier(.51,.01,0,1); position: absolute; bottom: 0; left: 0; width: 0; height: 16vh; background-color: #e23f17; }
 #main .banner .content{ position: relative; max-width: 1280px; height: 16vh; margin: 0 auto; }
-#main .banner .content .aboutInfo{ position: absolute; bottom: 0; left: 0; width: auto; padding: 28px 56px; background-color: #e23f17; box-shadow: 0 0 10px rgba(0,0,0,.3); height: 189px; }
+#main .banner .content .aboutInfo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  padding: 28px 56px;
+  transform-style: preserve-3d;
+  transition: .9s cubic-bezier(.51,.01,0,1);
+  transform: rotateX(10deg) translateY(-50px);
+  opacity: 0;
+  background-color: #e23f17;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  height: 189px;
+}
 #main .banner .content .aboutInfo .title{ color: #fff; font-size: 24px; margin-bottom: 20px; }
 #main .banner .content .aboutInfo .info{ font-size: 14px; color: #fff; line-height: 24px; }
 #main .banner .content .aboutInfo .info1{ margin-bottom: 10px; }
@@ -189,7 +202,7 @@ body{
 /*没有小于768px，是因为Bootstrap3以移端优先设计*/
 /* 小屏幕（平板，大于等于768px） */
 @media (min-width: 768px) {
-  #main .banner .content .aboutInfo{ width: 388px; transform-style: preserve-3d; transition: .9s cubic-bezier(.51,.01,0,1); transform: rotateX(10deg) translateY(-20px); opacity: 0; }
+  #main .banner .content .aboutInfo{ width: 388px; }
   #main .banner .bg .title{ font-size: 64px; }
   #main .banner .bg .subtitle{ font-size: 80px; }
   #main .banner .redBar{ display: block; }
