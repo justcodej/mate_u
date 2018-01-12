@@ -28,7 +28,7 @@
 #main{ width: auto; margin: 56px auto 0; }
 #main .courseTitle{ border-bottom: 1px solid #666; overflow: hidden; padding-bottom: 14px; margin-bottom: 36px; }
 #main .courseTitle .tip{ width: 158px; height: 33px; float: none; display: flex; margin-bottom: 20px; }
-#main .courseTitle .tip i.icon{ display: inline-block; width: 33px; height: 33px; background: url("../image/product/chanpinfuwu_39.png")no-repeat; }
+#main .courseTitle .tip i.icon{ display: inline-block; width: 33px; height: 33px; background: url("../images/product/chanpinfuwu_39.png")no-repeat; }
 #main .courseTitle .tip .text{ color: #ff3c00; font-size: 30px; line-height: 33px; text-indent: 5px; font-weight: lighter; }
 #main .courseTitle .tab{ float: none; }
 #main .courseTitle .tab ul{ display: flex; }
@@ -61,13 +61,13 @@
     background-color: #661800;
 }
 #main .courseList ul li a.poster .hidden{ position: absolute; top: 0; opacity: 0; left: 0; transition: .4s; width: 100%; height: 100%; background-color: rgba(0,0,0,.5); }
-#main .courseList ul li a.poster .hidden i.icon{ width: 60px; height: 60px; display: block; margin: 78px auto 0; background: url("../image/product/play.png")no-repeat; }
+#main .courseList ul li a.poster .hidden i.icon{ width: 60px; height: 60px; display: block; margin: 78px auto 0; background: url("../images/product/play.png")no-repeat; }
 #main .courseList ul li .info{ padding: 10px 5px; }
 #main .courseList ul li .info .t1{ font-size: 16px; font-weight: lighter; transition: .4s; color: #000; }
 #main .courseList ul li .info .t1:hover{color: #ff3c00; }
 #main .courseList ul li .info .t2{ font-size: 14px; color: #666;  font-weight: lighter; }
 #main .courseList ul li .info .t3{ position: relative; }
-#main .courseList ul li .info .t3 i.icon{ position: absolute; top: 4px; left: 0; width: 13px; height: 14px; display: inline-block; background: url("../image/product/time_icon.png")no-repeat; }
+#main .courseList ul li .info .t3 i.icon{ position: absolute; top: 4px; left: 0; width: 13px; height: 14px; display: inline-block; background: url("../images/product/time_icon.png")no-repeat; }
 #main .courseList ul li .info .t3 .time{ position: absolute; left: 18px; font-size: 14px; color: #666; }
 #main .courseList ul li .info .t3 b{ font-weight: lighter; position: absolute; right: 0; color: #666; }
 /*下一页*/

@@ -10,7 +10,7 @@
 
     init();
 
-    for(var i=0;i<$imgLi.length;i++)$imgLi[i].childNodes[0].style.cssText = 'background:url("./image/product/test_img_'+(i)+'.jpg")no-repeat center';
+    for(var i=0;i<$imgLi.length;i++)$imgLi[i].childNodes[0].style.cssText = 'background:url("./images/product/test_img_'+(i)+'.jpg")no-repeat center';
 
     $btnLi.hover(function () {
         $(this).addClass('on');

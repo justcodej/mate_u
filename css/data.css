@@ -1,0 +1,129 @@
+
+
+
+#banner{
+    padding-top: 80px;
+    height: 694px;
+}
+#imgList .tipText{
+    text-align: center;
+    padding-top: 32px;
+}
+#imgList .tipText .icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/data/title_icon.png")no-repeat;
+    vertical-align: bottom;
+    margin-right: 32px;
+}
+#imgList .tipText span{
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    vertical-align: top;
+}
+
+/*股票图片列表*/
+#imgList{
+    margin-top: 56px;
+    background: url("../images/data/bg1.jpg");
+}
+#imgList ul{
+    width: 1364px;
+    margin: 32px auto 0;
+    padding-bottom: 70px;
+    display: flex;
+}
+#imgList ul li{
+    width: 332px;
+    height: 244px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+#imgList ul li:last-child{
+    margin-right: 0;
+}
+#imgList ul li>p.title{
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #1d2434;
+    font-size: 14px;
+    color: #fff;
+}
+#imgList ul li .img{
+    height: 208px;
+}
+#imgList ul li .img img{
+    width: 100%;
+    height: 100%;
+}
+/*table*/
+#table{
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    padding-top: 62px;
+}
+#table .tableBg{
+    width: 1278px;
+    margin: 0 auto;
+    padding: 44px 38px;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+#table .tableBg table{
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+#table .tableBg table tr td:first-child{
+    padding: 18px 75px;
+}
+#table .tableBg table tr td:last-child{
+    padding: 18px 75px;
+}
+#table .tableBg table thead{
+    background-color: #e84117;
+    color: #fff;
+}
+
+#table .tableBg table td{
+    padding: 18px 38px;
+    border: 1px solid #000;
+    text-align: center;
+}
+#table>.info ul{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+#table>.info ul li{
+    margin: 40px 0;
+    padding: 0 104px;
+}
+#table>.info ul li b{
+    font-size: 18px;
+    font-weight: inherit;
+    color: #000;
+}
+#table>.info ul li span{
+    font-size: 18px;
+    color: #e84117;
+}
+/*警告*/
+#warning{
+    padding: 52px 0;
+}
+#warning p{
+    width: 1364px;
+    margin: 0 auto;
+    color: #999;
+    background-color: #fefefe;
+    border: 1px solid  #eee;
+    padding: 12px 104px;
+    line-height: 20px;
+}
+#warning p span{
+    color: #e84117;
+}

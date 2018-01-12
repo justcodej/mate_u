@@ -27,26 +27,115 @@ body{font-family: "微软雅黑";color:#333;}
 #in_method .in_method_last{font-size:32px; }
 /* 团队成员样式*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 #team{width:100%; height:814px; background:url(../images/index/picture_tmbackground.png) no-repeat;}
+=======
+#team{width:100%; height:auto; background:url(../images/index/picture_tmbackground.png) no-repeat;}
+>>>>>>> 55a142aec74f481d04dad403590a0ca8cffa4cb0
 #team .team_title{font-size:32px; color:#333; text-align:right; font-weight:bold; padding-top:166px; padding-bottom:60px;}
 =======
 #team{width:100%; background:url(../images/index/picture_tmbackground.png) no-repeat; padding-top:72px;}
 #team .team_title{font-size:32px; color:#333; text-align:right; font-weight:bold; padding-top:94px; padding-bottom:60px;}
 >>>>>>> yiva-sun
 #team .team_title .to_bottom{margin-left:17px;}
-#team .team_box{width:100%; background-color:#fff; box-shadow:0 0 10px #f1f1f1; text-align:center;}
-#team .team_member .team_box{position:relative;}
-#team .team_member .team_box_hover{position:absolute;left:0; top:0;
-width:100%; background-color:#fff;}
-#team .team_member .team_box_hover .team_hover_cont{background-color:#e84117; text-align:left; color:#fff; font-size:12px; line-height:20px; padding:15px 15px 0; margin:0; display:none;}
-#team .team_member .team_box_hover .team_small{width:82px; height:82px;margin-top:-41px; display:none;}
-#team .team_member .team_box_hover .team_hover_name{font-size:18px; color:#e84117; padding:18px 0 14px; margin:0;}
-#team .team_member .team_box_hover .team_hover_job{font-size:14px; padding-bottom:14px; margin:0;}
-#team .team_box .team_big{width:100%;}
-#team .team_box .team_name{font-size:18px; margin-top:20px; margin-bottom:16px;}
-#team .team_box .team_job{padding-bottom:18px; font-size:14px;}
-// #team .team_member .team_box:hover .team_box_hover{display:block;}
-/* 产业 */
+#team .content{
+    width: auto;
+    margin: 0 auto;
+    transition: .4s;
+}
+#team .content ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    transition: .4s;
+    height: auto;
+}
+#team .content ul li{
+    position: relative;
+    box-shadow:  0 2px 10px rgba(0,0,0,.1);
+    margin: 0 0 20px 20px;
+    overflow: hidden;
+    height: 378px;
+    transition: .4s;
+}
+#team .content ul li.hold{
+    height: 420px;
+}
+#team .content ul li .img{
+    height: 294px;
+}
+#team .content ul li .img img{
+    width: 100%;
+    height: 100%;
+}
+#team .content ul li .info{
+    border: 1px solid #eee;
+    padding: 15px 0 16px 0;
+    background-color: #fff;
+    opacity: 1;
+}
+#team .content ul li.hold .info{
+    opacity: 0;
+}
+#team .content ul li .info .t1{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+#team .content ul li .info .t2{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+#team .content ul li:nth-of-type(4){
+    margin-right: 0;
+}
+#team .content ul li .hiddenText{
+    position: absolute;
+    top: -340px;
+    left: 0;
+    background-color: #e84117;
+    color: #fff;
+    transition: .4s;
+    font-size: 12px;
+    padding: 34px 14px 46px;
+    width: 100%;
+}
+#team .content ul li .hiddenImg{
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    transition: .4s;
+    width: 100%;
+    background-color: #fff;
+}
+#team .content ul li .hiddenImg img{
+    position: relative;
+    z-index: 1;
+}
+#team .content ul li.hold .hiddenImg{
+    bottom: 0;
+}
+#team .content ul li.hold .hiddenText{
+    top: 0;
+}
+#team .content ul li .hiddenImg img{
+    display: block;
+    margin: 0 auto;
+}
+#team .content ul li .hiddenImg .name{
+    font-size: 18px;
+    color: #e84117;
+    text-align: center;
+}
+#team .content ul li .hiddenImg .title{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 14px;
+}
+    /* 产业 */
 #indus{height:328px; background-color:#1e1e20; margin-bottom:110px;}
 #indus h3{font-size:36px; color:#fff; text-align:center; padding:50px 0 66px;}
 #indus .indus_box{padding-left:2%;}
@@ -91,8 +180,21 @@ width:100%; background-color:#fff;}
 /* 合作伙伴 */
 #cooperate{width:100%; height:330px; text-align:center;}
 <<<<<<< HEAD
+<<<<<<< HEAD
 #cooperate h3{font-size:36px; padding:20px 0;}
 =======
 #cooperate h3{font-size:36px; padding:28px 0;}
 #cooperate img{width:100%;}
 >>>>>>> yiva-sun
+=======
+#cooperate h3{font-size:36px; padding:20px 0;}
+
+
+
+@media (min-width: 1200px) {
+    #team{height:814px;}
+    #team .content{ width: 1280px; }
+    #team .content ul{ height: 378px; }
+    #team .content ul li{ width: 294px; margin: auto; }
+}
+>>>>>>> 55a142aec74f481d04dad403590a0ca8cffa4cb0
