@@ -2,10 +2,11 @@
 * @Author: Marte
 * @Date:   2018-01-08 18:20:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-09 18:03:08
+* @Last Modified time: 2018-01-11 18:19:08
 */
 .bk{border:1px solid #000;}
 /* banner 样式*/
+
 #banner{ height:722px; background:url(../images/kalendar/common_bg.png) no-repeat;}
 #banner .wrapper{width:1200px; height:722px; margin:0 auto; position:relative;}
 #banner .banner_pic1{position:absolute; left:728px; top:62px; z-index:5;}
@@ -24,3 +25,6 @@
 #article .article_cont .cont_txt{border-left:1px solid #eee; padding-left:20px; font-size:12px; color:#666; line-height:22px;}
 #article .relief{background-color:#fefefe; padding:0 90px; font-size:12px; color:#999; border:1px solid #eee; margin-top:80px; line-height:20px; padding-top:10px;}
 #article .relief span{color:#e84117;}
+@media screen and (max-width:1400px) {
+    #article .relief{padding:10px 30px 0;}
+}

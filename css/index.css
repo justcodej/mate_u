@@ -2,41 +2,36 @@
 * @Author: Marte
 * @Date:   2018-01-05 16:55:32
 * @Last Modified by:   Marte
-<<<<<<< HEAD
-* @Last Modified time: 2018-01-08 15:42:56
-=======
-* @Last Modified time: 2018-01-09 17:10:21
->>>>>>> yiva-sun
+* @Last Modified time: 2018-01-12 18:28:55
 */
 .bk{border:1px solid red;}
 *{margin:0; padding:0;}
 body{font-family: "微软雅黑";color:#333;}
-#index_banner video{width:100%;}
-<<<<<<< HEAD
-#in_method{width:100%; height:324px; border:1px solid #eee; background-color:#fafafa; text-align:center;font-size:36px; line-height:64px;}
-=======
+/* banner 样式*/
+#index_banner{position:relative;}
+#index_banner video{width:100%; opacity:0;}
+#index_banner .banner_overlay{position:absolute; left:0; top:0; width:100%; height:100%;text-align:center; color:#fff;
+}
+#index_banner .banner_overlay .banner_overlay_bg{width:100%; height:100%; display:none;}
+#index_banner .overlay_box{width:575px; position:absolute; left:50%; top:50%; margin-left:-287px; }
+#index_banner .banner_overlay .h2{ font-size:48px; font-weight:normal; margin-top:100px; margin-bottom:107px; display:inline-block;*display:block; *zoom:1; position:relative; opacity:0;}
+#index_banner .h2_overlay{position:absolute; right:0; top:0; height:100%; width:100%; background-color:#fff;}
+#index_banner .banner_overlay .banner_pic{margin-bottom:90px; position:relative;}
+#index_banner .banner_pic .pic_overlay{position:absolute; right:0; top:0; width:100%; height:100%; background-color:#fff;    transform-origin: 100% 50% 0px;}
+#index_banner .banner_overlay h3{font-size:36px; display:none;}
+/* 解决方案 */
 @media screen and (min-width:800px) {
     #in_method{height:324px;}
     #team{height:814px;}
 }
 #in_method{width:100%; border:1px solid #eee; background-color:#fafafa; text-align:center;font-size:36px; line-height:64px;}
->>>>>>> yiva-sun
 #in_method .in_method_title{ color:#333; padding-top:100px;}
 #in_method .in_method_middle{font-weight:bold;}
 #in_method .in_method_title span{color:#e84117;}
 #in_method .in_method_last{font-size:32px; }
 /* 团队成员样式*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-#team{width:100%; height:814px; background:url(../images/index/picture_tmbackground.png) no-repeat;}
-=======
 #team{width:100%; height:auto; background:url(../images/index/picture_tmbackground.png) no-repeat;}
->>>>>>> 55a142aec74f481d04dad403590a0ca8cffa4cb0
 #team .team_title{font-size:32px; color:#333; text-align:right; font-weight:bold; padding-top:166px; padding-bottom:60px;}
-=======
-#team{width:100%; background:url(../images/index/picture_tmbackground.png) no-repeat; padding-top:72px;}
-#team .team_title{font-size:32px; color:#333; text-align:right; font-weight:bold; padding-top:94px; padding-bottom:60px;}
->>>>>>> yiva-sun
 #team .team_title .to_bottom{margin-left:17px;}
 #team .content{
     width: auto;
@@ -104,7 +99,7 @@ body{font-family: "微软雅黑";color:#333;}
 }
 #team .content ul li .hiddenImg{
     position: absolute;
-    bottom: -160px;
+    bottom: -170px;
     left: 0;
     transition: .4s;
     width: 100%;
@@ -127,6 +122,7 @@ body{font-family: "微软雅黑";color:#333;}
 #team .content ul li .hiddenImg .name{
     font-size: 18px;
     color: #e84117;
+    margin-top: 10px;
     text-align: center;
 }
 #team .content ul li .hiddenImg .title{
@@ -135,66 +131,52 @@ body{font-family: "微软雅黑";color:#333;}
     text-align: center;
     margin-top: 14px;
 }
-    /* 产业 */
+/* 产业 */
 #indus{height:328px; background-color:#1e1e20; margin-bottom:110px;}
 #indus h3{font-size:36px; color:#fff; text-align:center; padding:50px 0 66px;}
 #indus .indus_box{padding-left:2%;}
 #indus .indus_box li{float:left; width:12%; height:140px; text-align:center; border-right:1px solid #333; transition:all .5s; position:relative;}
-<<<<<<< HEAD
-// #indus .indus_box li:hover{background-color:#e84117; height:178px; border:0;}
-#indus .indus_box .inner{}
-#indus .indus_box li img{margin-top:32px;}
-#indus .indus_last{border-right:0!important;}
-#indus p{color:#fff;}
-=======
 #indus .indus_box li:hover img{transform:scale(1.2)}
 #indus .indus_box .inner{width:100%; height:100%; background-color:#e84117;}
 #indus .indus_box li img{margin-top:32px; position:relative; z-index:10; transition:all .5s;}
 #indus .indus_last{border-right:0!important;}
 #indus p{color:#fff; position:relative; z-index:10;}
->>>>>>> yiva-sun
+@media screen and (max-width:1400px) {
+    #indus{height:100%;}
+    #indus .indus_box li{width:24%;}
+}
 /* 市场新闻 */
+
 #MKT_new{width:100%; height:2074px; background:url(../images/index/new_bg.jpg) no-repeat;}
 #MKT_new .new_box{width:88%; height:100%; background-color:#fff; margin:0 auto; box-shadow:0 0 10px #e3e2e2; position:relative; top:-43px;}
 #MKT_new .new_box h3{font-size:36px; text-align:center; padding-top:58px; padding-bottom:35px;}
 #MKT_new .new_title{width:250px; border-top:1px solid #eee; border-bottom:1px solid #eee; height:52px; margin:0 auto; margin-bottom:64px;}
-<<<<<<< HEAD
-#MKT_new .new_title li{float:left; width:80px; height:28px; text-align:center; font-size:12px; color:#666; line-height:28px; margin-top:12px; }
-=======
 #MKT_new .new_title li{float:left; width:80px; height:28px; text-align:center; font-size:12px; color:#666; line-height:28px; margin-top:12px; cursor:pointer;}
->>>>>>> yiva-sun
 #MKT_new .new_title .new_hover{width:80px;background-color:#e84117; color:#fff;}
 #MKT_new .new_hover{width:80px;background-color:#e84117; color:#fff;}
 #MKT_new .new_title li.new_title1{margin-left:35px; margin-right:10px;}
 #MKT_new .new_title li.new_title2{margin-left:10px; margin-right:35px;}
-<<<<<<< HEAD
-=======
 #MKT .new_cont_box{position:relative;}
 #MKT .new_cont_box .new_cont{position:absolute; left:0; top:0;}
->>>>>>> yiva-sun
-#MKT_new .new_cont img{padding-bottom:22px!important;}
+#MKT_new .new_cont img{padding-bottom:22px!important; width:100%;}
 #MKT_new .new_cont>div{border-bottom:1px solid #e6e6e6;}
 #MKT_new .new_cont_middle{padding-top:18px;}
 #MKT_new .new_cont_right{text-align:right; padding-top:18px;}
 #MKT_new .new_cont_right .new_details{float:right; width:80px; height:30px; line-height:30px; border:1px solid #e6e6e6; text-align:center; margin-top:50px;}
+@media screen and (max-width:1400px) {
+    #MKT_new{height:100%;}
+    #MKT_new .new_cont .new_cont_right{text-align:left;}
+    #MKT_new .new_cont .new_cont_right .new_details{float:left;}
+    #MKT_new .new_cont>div{border-bottom:1px solid transparent;}
+}
 /* 合作伙伴 */
 #cooperate{width:100%; height:330px; text-align:center;}
-<<<<<<< HEAD
-<<<<<<< HEAD
-#cooperate h3{font-size:36px; padding:20px 0;}
-=======
 #cooperate h3{font-size:36px; padding:28px 0;}
 #cooperate img{width:100%;}
->>>>>>> yiva-sun
-=======
-#cooperate h3{font-size:36px; padding:20px 0;}
-
-
-
-@media (min-width: 1200px) {
-    #team{height:814px;}
-    #team .content{ width: 1280px; }
-    #team .content ul{ height: 378px; }
-    #team .content ul li{ width: 294px; margin: auto; }
-}
->>>>>>> 55a142aec74f481d04dad403590a0ca8cffa4cb0
+/* 浮动导航 */
+#fixed_nav{position:fixed; right:0; top:200px;}
+#fixed_nav .nav_box>li{width:80px; height:80px; background-color:#fff; text-align:center; padding-top:22px; position:relative; font-size:12px; color:#999; cursor:pointer;}
+#fixed_nav .nav_box>li p{padding-top:10px;}
+#fixed_nav .nav_box .fixed_first{background-color:#e84117; color:#fff;}
+#fixed_nav .nav_box .fixed_last{background-color:#333;color:#fff;}
+#fixed_nav .line{position:absolute; left:6px; bottom:0; width:68px; height:1px; background-color:#f2f2f2;}

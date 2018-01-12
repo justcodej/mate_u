@@ -9,17 +9,29 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="js/screenresize.js"></script>
-
 </head>
 <body>
 <!-- 首页banner start-->
     <div class="index_banner" id="index_banner">
-        <video src="video/Color.mp4" autoplay>
+        <video src="video/Color.mp4" autoplay="autoplay" controls>
         </video>
+        <div class="banner_overlay">
+            <img src='images/kalendar/common_bg.png' alt="" class="banner_overlay_bg" >
+            <div class="overlay_box">
+                <span class="h2">直播从这里开始
+                    <div class="h2_overlay"></div>
+                </span>
+                <div class="banner_pic">
+                    <img src="images/index/banner_logo.png" alt="" />
+                    <div class="pic_overlay"></div>
+                </div>
+                <h3>只为这一刻</h3>
+            </div>
+        </div>
     </div>
 <!-- 首页banner end-->
 <!-- 解决方案 start-->
-    <div class="in_method" id="in_method">
+    <div class="in_method" id="in_method" data-scroll-reveal="enter bottom">
         <h2 class="in_method_title">作为业内<span>领先的在线金融</span>教育服务商</h2>
         <p class="in_method_middle">Mate·U</p>
         <p class="in_method_last">帮您开启全新的服务传播模式</p>
@@ -99,48 +111,54 @@
     </div>
 <!-- 团队成员 end-->
 <!-- 产业 start -->
-    <div class="indus" id="indus">
+    <div class="indus" id="indus"  data-scroll-reveal="enter bottom">
         <h3>Mate·U产业</h3>
         <ul class="indus_box clearfix" >
             <li>
                 <img src="images/index/indus_1.png" alt="">
                 <p>专业训练营</p>
-                <div class="inner" style="width:100%; height:100%; background-color:rgba(255,255,255,.5)"></div>
+                <div class="inner"></div>
             </li>
             <li>
                 <img src="images/index/indus_2.png" alt="">
                 <p>财经日历</p>
-                <div class="inner" style="width:100%; height:100%; background-color:rgba(255,255,255,.5)"></div>
+                <div class="inner"></div>
             </li>
             <li>
                 <img src="images/index/indus_3.png" alt="">
                 <p>股票专栏</p>
+                <div class="inner"></div>
             </li>
             <li>
                 <img src="images/index/indus_4.png" alt="">
                 <p>技术分析</p>
+                <div class="inner"></div>
             </li>
             <li>
                 <img src="images/index/indus_5.png" alt="">
                 <p>直播课堂</p>
+                <div class="inner"></div>
             </li>
             <li>
                 <img src="images/index/indus_6.png" alt="">
                 <p>自动化系统</p>
+                <div class="inner"></div>
             </li>
             <li>
                 <img src="images/index/indus_7.png" alt="">
                 <p>交易跟单</p>
+                <div class="inner"></div>
             </li>
             <li class="indus_last">
                 <img src="images/index/indus_8.png" alt="">
                 <p>导师团队</p>
+                <div class="inner"></div>
             </li>
         </ul>
     </div>
 <!-- 产业 end -->
 <!-- 金十数据 start -->
-    <div class="data" id="data">
+    <div class="data" id="data"  data-scroll-reveal="enter bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xs-1"></div>
@@ -160,143 +178,198 @@
                 <li class="new_hover new_title1">市场新闻</li>
                 <li class="new_title2">市场动态</li>
             </ul>
-            <div class="container new_cont">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new1.png" alt="">
+            <div class="new_cont_box">
+                <div class="container new_cont">
+                    <div class="row"  data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3 col-xs-12">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
                     </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                    <div class="row"  data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3">
+                            <img src="images/index/new2.png" alt="">
+                        </div>
+                        <div class="col-sm-6 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
                     </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
+                    <div class="row" data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3">
+                            <img src="images/index/new3.png" alt="">
+                        </div>
+                        <div class="col-sm-6 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
+                    </div>
+                    <div class="row" data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
+                    </div>
+                    <div class="row" data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
+                    </div>
+                    <div class="row" data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
+                    </div>
+                    <div class="row" data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new2.png" alt="">
+                <div class="container new_cont" style="display:none;">
+                    <div class="row"  data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3 col-xs-12">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
                     </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                    <div class="row"  data-scroll-reveal="enter bottom">
+                        <div class="col-sm-3 col-xs-12">
+                            <img src="images/index/new1.png" alt="">
+                        </div>
+                        <div class="col-sm-6 col-xs-12 new_cont_middle">
+                            <p>中关村尽责社会持续发展产业园设计</p>
+                            <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12 new_cont_right">
+                            <div class="new_date">2017-06-28</div>
+                            <a class="new_details new_hover">详细内容</a>
+                        </div>
                     </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new3.png" alt="">
-                    </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
-                    </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new1.png" alt="">
-                    </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
-                    </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new1.png" alt="">
-                    </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
-                    </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new1.png" alt="">
-                    </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
-                    </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new1.png" alt="">
-                    </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
-                    </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="images/index/new1.png" alt="">
-                    </div>
-                    <div class="col-xs-6 new_cont_middle">
-                        <p>中关村尽责社会持续发展产业园设计</p>
-                        <p>中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计中关村尽责社会持续发展产业园设计</p>
-                    </div>
-                    <div class="col-xs-3 new_cont_right">
-                        <div class="new_date">2017-06-28</div>
-                        <a class="new_details new_hover">详细内容</a>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 <!-- 市场新闻 end -->
 <!-- 合作伙伴 start -->
-    <div class="cooperate" id="cooperate">
+    <div class="cooperate" id="cooperate"  data-scroll-reveal="enter bottom">
         <h3>合作伙伴</h3>
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-4 col-xs-6" data-scroll-reveal="enter bottom after .1s">
                     <img src="images/index/cooperate1.png" alt="">
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-4 col-xs-6" data-scroll-reveal="enter bottom after .2s">
                     <img src="images/index/cooperate2.png" alt="">
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-4 col-xs-6" data-scroll-reveal="enter bottom after .3s">
                     <img src="images/index/cooperate3.png" alt="">
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-4 col-xs-6" data-scroll-reveal="enter bottom after .4s">
                     <img src="images/index/cooperate4.png" alt="">
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-4 col-xs-6" data-scroll-reveal="enter bottom after .5s">
                     <img src="images/index/cooperate5.png" alt="">
                 </div>
-                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="col-md-2 col-sm-4 col-xs-6" data-scroll-reveal="enter bottom after .6s">
                     <img src="images/index/cooperate6.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 <!-- 合作伙伴 end -->
+<!-- 浮动导航 start-->
+    <div class="fixed_nav" id="fixed_nav">
+        <ul class="nav_box">
+            <li class="fixed_first">
+                <img src="images/fixd-nav/baoming.png" alt="">
+                <p>活动报名</p>
+                <!-- <div class="line"></div> -->
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/fixd-nav/kefu.png" alt="">
+                    <p>联系客服</p>
+                    <div class="line"></div>
+                </a>
+            </li>
+            <li>
+                <a href="http://xd01.777fan.cn/vip">
+                    <img src="images/fixd-nav/zhibo.png" alt="">
+                    <p>直播进入</p>
+                    <div class="line"></div>
+                </a>
+            </li>
+            <li class="fixed_last">
+                <img src="images/fixd-nav/to_top.png" alt="">
+                <p>返回顶部</p>
+                <!-- <div class="line"></div> -->
+            </li>
+        </ul>
+    </div>
+<!-- 浮动导航 end -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/scrollReveal.min.js"></script>
+<script type="text/javascript">
+      (function($) {
+        'use strict';
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
+      })();
+    </script>
 </body>
 </html>

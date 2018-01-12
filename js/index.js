@@ -2,54 +2,48 @@
 * @Author: Marte
 * @Date:   2018-01-06 16:02:30
 * @Last Modified by:   Marte
-<<<<<<< HEAD
-* @Last Modified time: 2018-01-08 15:18:40
+* @Last Modified time: 2018-01-12 18:29:49
 */
-
-<<<<<<< HEAD
-=======
-* @Last Modified time: 2018-01-09 16:13:25
-*/
-/* 团队成员 */
->>>>>>> yiva-sun
+/* 首页banner效果 */
 (function(){
-    var h=$("#team .team_big").height();
-    var w=$("#team .team_big").width();
-    $("#team .team_hover_cont").css({'height':h});
-=======
-// team
+    var banner_h=$('#index_banner').height();
+    $('#index_banner .overlay_box').css({'height':banner_h,'margin-top':-banner_h/2});
+    $("#index_banner").on('mouseenter',function(){
+        $('.banner_overlay_bg').eq(0).slideDown('400', function() {
+            $('#index_banner .banner_overlay .h2').css({'opacity':1}).find('.h2_overlay').animate({'width':0},function(){
+                $('.banner_pic').css({'opacity':1}).find('.pic_overlay').animate({'width':0},function(){
+                    $('#index_banner .banner_overlay h3').slideDown();
+                });
+            });
+        });
 
-
-(function () {
-    $('#team .content ul li').mouseenter(function () {$(this).addClass('hold')}).mouseleave(function () {$(this).removeClass('hold')});
->>>>>>> 55a142aec74f481d04dad403590a0ca8cffa4cb0
-
+    })
 
 })();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
+
 /* 团队成员 */
->>>>>>> yiva-sun
-=======
 // (function(){
 //     var h=$("#team .team_big").height();
 //     var w=$("#team .team_big").width();
 //     $("#team .team_hover_cont").css({'height':h});
-//
+
 //     $('.team_box').hover(function(){
 //         // $(this).find($('.team_bg')).fadeOut();
 //         $(this).find($('.team_hover_cont')).slideDown();
 //         $(this).find($('.team_small')).fadeIn();
 //         $(this).find($('.team_name')).animate({'margin-top':'50px'}).css({'color':'#e84117'})
 //     },function(){
-//         $(this).find($('.team_hover_cont')).slideUp();
-//         $(this).find($('.team_small')).fadeOut();
-//         $(this).find($('.team_name')).animate({'margin-top':'10px'}).css({'color':'#333'})
+//         $(this).find($('.team_hover_cont')).stop().slideUp();
+//         $(this).find($('.team_small')).stop().fadeOut();
+//         $(this).find($('.team_name')).stop().animate({'margin-top':'10px'}).css({'color':'#333'})
 //     })
-//
+
 // })();
->>>>>>> 55a142aec74f481d04dad403590a0ca8cffa4cb0
+(function () {
+    $('#team .content ul li').mouseenter(function () {$(this).addClass('hold')}).mouseleave(function () {$(this).removeClass('hold')});
+})();
+/* 团队成员 */
 (function($){
         $.fn.extend({
             show : function(div){
@@ -118,9 +112,6 @@
     })(jQuery)
     $("#indus .indus_box li").each(function(i){
     $(this).show($(".inner").eq(i));
-<<<<<<< HEAD
-});
-=======
 });
 /* 市场新闻 */
 (function(){
@@ -134,4 +125,3 @@
 
     })();
 })()
->>>>>>> yiva-sun
