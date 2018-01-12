@@ -90,10 +90,11 @@
         $('#main .banner .redBar').css('width','100vw');
     });
     $('#main .banner .redBar').on('transitionend',function () {
-        $('#main .banner .content .aboutInfo').css({
-            opacity: '1',
-            transform: 'translateY(0px) scale(1)'
-        });
+        $('#main .banner .content .aboutInfo').addClass('play');
+    });
+    $('#main .banner .content .aboutInfo').on('transitionend',function () {
+        $('#main .banner .content .aboutInfo').find('p').css('opacity','1');
+        $('#main .banner .content .maskLayer').css('width','0');
     });
 
 
