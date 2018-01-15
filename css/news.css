@@ -1,0 +1,194 @@
+
+
+#banner{
+    height: 220px;
+    background: url("../images/news/banner.jpg")no-repeat center/cover;
+    margin-top: 80px;
+    transition: .4s cubic-bezier(.51,.01,0,1);
+}
+
+#main{
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*tab*/
+#main .newsTab{
+    margin-top: 52px;
+}
+#main .newsTab ul{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 12px 36px;
+    max-width: 248px;
+    margin: 0 auto;
+}
+#main .newsTab ul li i.icon{
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background: #eee;
+    margin: 0 8px 0 18px;
+}
+#main .newsTab ul li a{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #666;
+    font-weight: lighter;
+}
+#main .newsTab ul li.active a{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e84117;
+    color: #fff;
+    font-weight: lighter;
+}
+/*list*/
+#main .newList{
+    margin-top: 85px;
+}
+#main .newList ul li{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 22px;
+    margin-top: 22px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#main .newList ul li:hover .info .title{
+    color: #000;
+}
+#main .newList ul li:hover .info .text{
+    color: #444;
+}
+#main .newList ul li .border{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #eee;
+    transition: 1s cubic-bezier(.51,.01,0,1);
+}
+#main .newList ul li .img{
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#main .newList ul li .img a{
+    display: block;
+}
+#main .newList ul li .img a img{
+    display: block;
+    margin: 0 auto;
+}
+#main .newList ul li .info{
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+    padding: 20px 40px;
+}
+#main .newList ul li .info .title{
+    display: block;
+    font-size: 16px;
+    color: #333;
+    transition: .4s;
+    text-align: center;
+}
+#main .newList ul li .info .text{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    transition: .4s;
+    text-align: center;
+}
+#main .newList ul li .more{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: auto;
+}
+#main .newList ul li .more .time{
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    margin-right: 40px;
+}
+#main .newList ul li .more .btn{
+    display: none;
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    border: 1px solid #eee;
+}
+#main .newList ul li .more .btn a{
+    display: block;
+    padding: 8px 20px;
+    color: #666;
+    font-size: 12px;
+    transition: .4s;
+    background-color: #fff;
+}
+#main .newList ul li .more .btn a:hover{
+    background-color: #e84117;
+    color: #fff;
+}
+/*next*/
+#main .pageNext{ padding: 20px 10px; transition: .4s; overflow: hidden; margin-top: 50px; }
+#main .pageNext .btn{ width: auto; float: none; display: flex; -webkit-justify-content: center; justify-content: center; }
+#main .pageNext .btn .up,#main .pageNext .btn .down{ display: block; padding: 13px 63px; border: 1px solid #e6e6e6; background-color: #fafafa; color: #666; font-size: 14px; }
+#main .pageNext .btn ul{ display: none; }
+#main .pageNext .btn ul li{ border: 1px solid #e6e6e6; }
+#main .pageNext .btn ul li a{ display: block; padding: 12px 18px; text-align: center; color: #999; }
+
+
+
+
+/*没有小于768px，是因为Bootstrap3以移端优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    /*banner*/
+    #banner{ height: 520px;}
+    /*list*/
+    #main .newList ul li{ display: flex; }
+    #main .newList ul li .img{ margin-right: 40px; }
+    #main .newList ul li .img a img{ margin: auto; }
+    #main .newList ul li .more{ width: 90px; }
+    #main .newList ul li .more .btn{ display: none; }
+    #main .newList ul li .more .time{ margin-right: 0; }
+    #main .newList ul li .info{  margin-right: 90px;  padding-top: 18px;  }
+    #main .newList ul li .info .title{ text-align: left }
+    #main .newList ul li .info .text{ text-align: left }
+    /*next*/
+    #main .pageNext .btn ul{ display: flex; }
+    #main .pageNext .btn{ width: 776px; float: right; }
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+}
+
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+
+    #main .newList ul li .more{ position: absolute; right: 0; top: 0; }
+    /*list*/
+    #main .newList ul li{ display: flex; }
+    #main .newList ul li .img{ margin-right: 40px; }
+    #main .newList ul li .img a img{ margin: auto; }
+    #main .newList ul li .info{  margin-right: 90px;  padding-top: 18px;  }
+    #main .newList ul li .info .title{ text-align: left }
+    #main .newList ul li .info .text{ text-align: left }
+    #main .newList ul li .more .btn{ display: block; }
+    /*next*/
+    #main .pageNext .btn ul{ display: flex; }
+    #main .pageNext .btn{ width: 776px; float: right; }
+
+}

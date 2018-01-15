@@ -1,6 +1,5 @@
 
 
-
 #banner{
     padding-top: 80px;
     height: 694px;
@@ -30,16 +29,18 @@
     background: url("../images/data/bg1.jpg");
 }
 #imgList ul{
-    width: 1364px;
+    width: auto;
     margin: 32px auto 0;
     padding-bottom: 70px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #imgList ul li{
     width: 332px;
     height: 244px;
     overflow: hidden;
-    margin-right: 12px;
+    padding: 0 12px 12px 0;
 }
 #imgList ul li:last-child{
     margin-right: 0;
@@ -66,13 +67,14 @@
     padding-top: 62px;
 }
 #table .tableBg{
-    width: 1278px;
+    overflow-x: scroll;
     margin: 0 auto;
     padding: 44px 38px;
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
 }
 #table .tableBg table{
+    width: 1278px;
     background-color: #fff;
     margin: 0 auto;
     border: 1px solid #000;
@@ -94,36 +96,63 @@
     text-align: center;
 }
 #table>.info ul{
-    width: 1280px;
+    width: auto;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #table>.info ul li{
     margin: 40px 0;
     padding: 0 104px;
 }
 #table>.info ul li b{
-    font-size: 18px;
+    font-size: 12px;
     font-weight: inherit;
     color: #000;
+    transition: .4s;
 }
 #table>.info ul li span{
-    font-size: 18px;
+    font-size: 12px;
     color: #e84117;
+    transition: .4s;
 }
 /*警告*/
 #warning{
     padding: 52px 0;
 }
 #warning p{
-    width: 1364px;
+    width: auto;
     margin: 0 auto;
     color: #999;
     background-color: #fefefe;
     border: 1px solid  #eee;
-    padding: 12px 104px;
+    padding: 20px;
     line-height: 20px;
+    transition: .4s;
 }
 #warning p span{
     color: #e84117;
+}
+
+
+
+/*没有小于768px，是因为Bootstrap3以移端优先设计*/
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    #table>.info ul li b { font-size: 16px; }
+    #table>.info ul li span { font-size: 16px; }
+}
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+}
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1280px) {
+    #imgList ul{ width: 1364px;}
+    #imgList ul li { margin: 0 12px 0 0; padding: 0; }
+    #table .tableBg{ overflow: hidden; }
+    #table>.info ul{ width: 1280px; display: flex; }
+    #warning p{ width: 1364px; padding: 12px 104px;}
+    #table>.info ul li b { font-size: 18px; }
+    #table>.info ul li span { font-size: 18px; }
 }
