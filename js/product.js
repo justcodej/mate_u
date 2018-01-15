@@ -18,19 +18,6 @@
         if(!$(this).hasClass('hold'))$(this).removeClass('on');
     });
 
-    $smallBtn.click(function () {
-        if ($(this).index()-1){
-            $btnLi.eq(index).removeClass('on hold');
-            if(index <= 0)index = $imgLi.length;
-            index--;
-       }else {
-            $btnLi.eq(index).removeClass('on hold');
-            index++;
-            index%=$imgLi.length;
-       }
-        play();
-    });
-
     $btnLi.click(function () {
         $btnLi.eq(index).removeClass('on hold');
         index = $(this).index()-1;

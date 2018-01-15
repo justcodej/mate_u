@@ -8,7 +8,6 @@
         onOff?open():close();
         onOff = !onOff;
     });
-    
     function open() {
         $('#maskLayer').css('top','50px');
         $('#smallMenu').css('top','50px');
@@ -65,7 +64,8 @@
 // scroll
 (function () {
 
-    if( $(document,'body').scrollTop() <= 3000 ){
+    // banner
+    if( $(document,'body').scrollTop() <= 4000 ){
         $('#nav').css({
             opacity:'1',
             transform: 'translateY(0) scale(1)',
@@ -96,21 +96,45 @@
         $('#main .banner .content .aboutInfo').find('p').css('opacity','1');
         $('#main .banner .content .maskLayer').css('width','0');
     });
+    // team
+
 
 
     $(document,'body').scroll(function () {
+        //title&subtitle
+        gdjz($('#main .team .content .title'),'scroll',100);
+        gdjz($('#main .team .content .subtitle'),'scroll',100);
+        gdjz($('#main .team .content .info'),'scroll',100);
+        // team part1
+        gdjz($('#main .team .content .part1 .poster .redLine'),'scroll',100);
+        gdjz($('#main .team .content .part1 .poster img.img'),'scroll',100);
+        gdjz($('#main .team .content .part1 .message'),'scroll',100);
+        // team part2
+        gdjz($('#main .team .content .part2 .poster .redLine'),'scroll',100);
+        gdjz($('#main .team .content .part2 .poster img.img'),'scroll',100);
+        gdjz($('#main .team .content .part2 .message'),'scroll',100);
+        // team part3
+        gdjz($('#main .team .content .part3 .poster .redLine'),'scroll',100);
+        gdjz($('#main .team .content .part3 .poster img.img'),'scroll',100);
+        gdjz($('#main .team .content .part3 .message'),'scroll',100);
+        // team part4
+        gdjz($('#main .team .content .part4 .poster .redLine'),'scroll',100);
+        gdjz($('#main .team .content .part4 .poster img.img'),'scroll',100);
+        gdjz($('#main .team .content .part4 .message'),'scroll',100);
+        // iconTab
+        gdjz($('#main .iconTab'),'scroll',100);
+        gdjz($('#main .coreTitle'),'scroll',100);
+        gdjz($('#main .imgAd .content'),'scroll',100);
+        gdjz($('#main .tip'),'scroll',100);
 
     });
-    function gdjz(div,cssname,offset,cb){
+    function gdjz(div,cssname,offset){
         var a,b,c,d;
         d=$(div).offset().top;
         a=eval(d + offset);
         b=$(window).scrollTop();
         c=$(window).height();
-        if(b+c>a){
-            $((div)).addClass((cssname));
-            cb && cb();
-        }
+        if(b+c>a)$((div)).addClass((cssname));
     }
 })();
 
@@ -127,8 +151,6 @@
         h = (this.clientHeight-80)/2;
         x > w?x=parseInt((x*1-w)*0.05):x=parseInt((x*-1-w)*0.05);
         y > h?y=parseInt((y*1-h)*0.05):y=parseInt((y*-1-h)*0.05);
-
-        console.log(y,x)
 
     };
 })();

@@ -1,6 +1,8 @@
 body{
   overflow-x: hidden;
-  height: 7000px;
+}
+#main .scroll{
+  animation: teamPlay 2s ease forwards;
 }
 
 /*导航开始*/
@@ -76,14 +78,51 @@ body{
 #main .team{  background: url("../images/about/team_bg.jpg"); }
 #main .team .content{ max-width: 1280px; margin: 0 auto; }
 #main .team .content>.title{ padding-top: 57px; }
-#main .team .content>.title,#main .team .content>.subtitle{ font-size: 30px; transition: .4s; font-family: "Arial Black"; color: rgba(255,255,255,.1); }
+#main .team .content>.title,#main .team .content>.subtitle{ font-size: 30px; opacity: 0; transition: .4s; font-family: "Arial Black"; color: rgba(255,255,255,.1); }
 /*part odd*/
-#main .team .content>.info{ font-size: 25px; color: #fff; margin-bottom: 50px; transition: .4s; }
-#main .team .content .part{ display: flex; flex-flow: row wrap; -webkit-flex-flow: row wrap; overflow: hidden; padding-left: auto; transition: .4s; }
-#main .team .content .part .poster{ position: relative; margin: 0 auto; float: none; width: auto; height: auto; overflow: hidden; }
-#main .team .content .part .poster .redLine{ display: none; position: static; bottom: 0; left: 0; width: 270px; height: 346px; border: 2px solid #e84117; }
-#main .team .content .part .poster img.img{ display: block; position: static; width: auto; height: auto; }
-#main .team .content .part .message{ position: relative; width: auto; height: auto; padding: 20px; float: none; margin-top: 30px; }
+#main .team .content>.info{ font-size: 25px; color: #fff; opacity: 0; margin-bottom: 50px; transition: .4s; }
+#main .team .content .part{ display: flex; flex-flow: row wrap; -webkit-flex-flow: row wrap; perspective: 1200px; padding-left: auto; transition: .4s; }
+#main .team .content .part .poster{ position: relative; margin: 0 auto; float: none; width: auto; height: auto; }
+
+#main .team .content .part .poster .redLine{
+  transform-style: preserve-3d;
+  display: none;
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 270px;
+  height: 346px;
+  opacity: 0;
+  border: 2px solid #e84117;
+}
+#main .team .content .part .poster img.img{
+  transform-style: preserve-3d;
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  opacity: 0;
+}
+#main .team .content .part .message{
+  transform-style: preserve-3d;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 20px 50px;
+  float: none;
+  margin-top: 30px;
+  opacity: 0;
+}
+@keyframes teamPlay {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform:  translateY(0px);
+    opacity: 1;
+  }
+}
 #main .team .content .part .message p.title>span{ font-size: 20px; color: #e84117; margin-right: 25px; }
 #main .team .content .part .message p.title>b{ font-size: 28px; color: #fff; font-weight: lighter; }
 #main .team .content .part .message>.info{ position: static; right: 0; top: 86px; width: auto; height: auto; }
@@ -97,7 +136,7 @@ body{
 #main .team .content .even .message{ float: none; order: 2; -webkit-order: 2; }
 #main .team .content .part1,#main .team .content .part2,#main .team .content .part3,#main .team .content .part4{ padding-bottom: 150px; }
 /*iconTab*/
-#main .iconTab{ display: none; border-bottom: 1px solid #eee; height: 130px; }
+#main .iconTab{ display: none; border-bottom: 1px solid #eee; height: 130px; opacity: 0; }
 #main .iconTab .content{ position: relative; width: 1280px; margin: 0 auto; height: 100%; }
 #main .iconTab .content>ul{ text-align: center; height: 100%; }
 #main .iconTab .content>ul>li{ display: inline-block; padding-right: 72px; margin-top: 32px; cursor: pointer; }
@@ -120,6 +159,7 @@ body{
 #main .imgAd .content .ad1 .showText .t{ color: #fff; font-size: 14px; line-height: 24px; }
 /*ad*/
 #main .imgAd .content .ad2,#main .imgAd .content .ad3{ margin: 0 auto; max-width: 456px; }
+#main .imgAd .content .ad3{ display: block; }
 
 #main .imgAd .content .adView{
   position: relative;
@@ -186,10 +226,10 @@ body{
 
 #main .tip{
   background-color: #e84117;
-  height: 145px;
+  height: auto;
 }
 #main .tip .content{
-  width: 1280px;
+  width: auto;
   margin: 0 auto;
   padding: 26px 20px;
 }
@@ -222,21 +262,26 @@ body{
   /*team*/
   #main .team .content>.title,#main .team .content>.subtitle{ font-size: 65px; }
   #main .team .content>.info{ font-size: 36px; margin-bottom: 108px; }
-  /*odd*/
-  #main .team .content .part{ display: block; padding-left: 67px; }
+
+  #main .team .content .part{ display: flex; padding-left: 67px; }
   #main .team .content .part .poster{  margin: auto; float: left; width: 332px; height: 394px; }
   #main .team .content .part .poster .redLine{ position: absolute; display: block; }
   #main .team .content .part .poster img.img{ position: absolute; bottom: 18px; left: 48px; width: 284px; height: 376px; }
-  #main .team .content .part .message{ position: relative; width: 532px; padding: auto; height: 263px; float: right; margin-top: 70px; }
+  #main .team .content .part .message{ position: relative; width: 532px; height: 263px; float: right; margin-top: 70px; }
   #main .team .content .part .message>.info{ position: absolute; width: 424px; height: 175px; }
-  #main .team .content .even .poster{ float: right; order: 0; -webkit-order: 0; }
-  #main .team .content .even .message{ float: left; order: 0; -webkit-order: 0; }
+  #main .team .content .even .poster{ float: none; order: 1; -webkit-order: 1; }
+  #main .team .content .even .message{ float: none; order: 2; -webkit-order: 2; }
   /*iconTab*/
   #main .iconTab{ display: block; }
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 820px) {
   /*ad*/
-  #main .imgAd .content{ display: flex; width: 1280px; }
-  #main .imgAd .content .ad1{ margin-right: 62px; }
-  #main .imgAd .content .ad2{ margin-right: 62px; }
+  #main .imgAd .content{ display: flex; flex-flow: row wrap; }
+  #main .imgAd .content .ad3{ display: flex; max-width: none; width: 100%; justify-content: center; margin: 0; }
+  #main .imgAd .content .ad3 .adView:first-child{ width: 456px; }
+  #main .imgAd .content .ad3 .adView{ margin: 0 auto 32px; }
 }
 
 /* 中等屏幕（桌面显示器，大于等于992px） */
@@ -250,8 +295,6 @@ body{
   /*小导航*/
   #smallMenu { display: none; }
   #maskLayer{ display: none; }
-  /*team*/
-  #main .team .content>.title,#main .team .content>.subtitle{ font-size: 90px; }
 }
 
 
@@ -260,4 +303,18 @@ body{
   #nav .container a.logo p{ display: block; line-height: 32px; font-size: 16px; color: #474241; margin-left: 10px; }
   #nav .container a.logo i.line{ display: block; background: #000; width: 1px; height: 32px; margin-left: 10px; }
   #nav .container ul.menu>li{ position: relative; padding: 28px 25px; }
+
+  #main .tip{ height: 145px; }
+  #main .tip .content{ width: 1280px; }
+  /*ad*/
+  #main .imgAd .content{ display: flex; width: 1280px; flex-flow: row nowrap; }
+  #main .imgAd .content .ad1{ margin-right: 62px; }
+  #main .imgAd .content .ad2{ margin-right: 62px; }
+  #main .imgAd .content .ad3{ display: block; max-width: 456px; width: auto; }
+  #main .imgAd .content .ad3 .adView{ margin: 0 auto 32px;  }
+  #main .imgAd .content .ad3 .adView:first-child{ width: auto;  }
+  /*team*/
+  #main .team .content .part{ display: block; padding-left: 67px; }
+  #main .team .content .even .poster{ float: right; order: 0; -webkit-order: 0; }
+  #main .team .content .even .message{ float: left; order: 0; -webkit-order: 0; }
 }

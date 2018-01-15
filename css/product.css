@@ -9,10 +9,6 @@
 #banner .imgTab ul li:nth-of-type(4){ background-color: #040523; }
 #banner .imgTab ul li:nth-of-type(5){ background-color: #ff3c00; }
 #banner .imgTab ul li .view{ width: auto; height: 100%; margin: 0 auto; padding-top: 80px; }
-/*手机导航切换按钮*/
-#banner .back,#banner .next{ user-select: none; position: absolute; top:0; height: 100%; width: 54px; background-color: rgba(0,0,0,.3); cursor: pointer; color: #fff; font-size: 30px; }
-#banner .back{ left: 0; }
-#banner .next{ right: 0; }
 
 /*图标切换*/
 #banner .btnTab{ position: absolute; bottom: 0; width: 100%; border-top: 2px solid #fff; height: auto; background: rgba(0,0,0,.3); user-select: none; }
