@@ -79,47 +79,48 @@
             setTimeout(function () {
                 $imgLi.eq(0).find('.view p.title').css('animation','LiMoveY .8s ease forwards');
                 $imgLi.eq(0).find('.view p.subtitle').css('animation','LiMoveY .8s ease forwards');
+                $imgLi.eq(0).find('.view .bigRound').css('animation','Liscale 1s ease forwards');
+                $imgLi.eq(0).find('.view .people').css({
+                    animation: 'animation','Liscale 1s ease forwards',
+                    backgroundColor: ''
+                });
             },500);
         }
         $imgLi.eq(0).find('.view p.title').on('animationend',function () {
             $imgLi.eq(0).find('.view p.info').css('animation','LiMoveY .8s ease forwards');
             $imgLi.eq(0).find('.view .text').css('animation','LiMoveY .8s ease forwards');
-            $imgLi.eq(0).find('.view .dollar').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .up').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .round1').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .round2').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .round3').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .round4').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .bigRound').css('animation','changeOpacity 1s ease forwards');
-            $imgLi.eq(0).find('.view .people').css('animation', 'changeOpacity 1s ease forwards');
+            $imgLi.eq(0).find('.view .dollar').css('animation','Liscale .8s ease forwards');
+            $imgLi.eq(0).find('.view .up').css('animation','Liscale .8s ease forwards');
+            $imgLi.eq(0).find('.view .round1').css('animation','Liscale .8s ease forwards');
+            $imgLi.eq(0).find('.view .round2').css('animation','Liscale .8s ease forwards');
+            $imgLi.eq(0).find('.view .round3').css('animation','Liscale .8s ease forwards');
+            $imgLi.eq(0).find('.view .round4').css('animation','Liscale .8s ease forwards');
         });
         $imgLi.eq(0).find('.view .text').on('animationend',function () {
             $imgLi.eq(0).find('.view a.btn').css('animation','LiMoveX .8s ease forwards');
-            $imgLi.eq(0).find('.view .arcRound').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(0).find('.view .arcLine').css('animation','changeOpacity .8s ease forwards');
+            $imgLi.eq(0).find('.view .arcRound').css('animation','Liscale .8s ease forwards');
+            $imgLi.eq(0).find('.view .arcLine').css('animation','Liscale .8s ease forwards');
         });
 
         // banner 2
         if(index == 1){
             setTimeout(function () {
-                $imgLi.eq(1).find('.view .redBox').css('animation','changeHeight .8s ease forwards');
-                $imgLi.eq(1).find('.view .tip').css('animation','changeWidth .8s ease forwards');
+                $imgLi.eq(1).find('.view .redBox').css('animation','changeHeight .8s ease forwards')
             },500);
         }
         $imgLi.eq(1).find('.view .redBox').on('animationend',function () {
-            $imgLi.eq(1).find('.view .redBox span').css('animation','changeOpacity .8s ease forwards');
-            $imgLi.eq(1).find('.view .tip span').css('animation','changeOpacity .8s ease forwards');
+            $imgLi.eq(1).find('.view .redBox span').css('animation','Liscale .8s ease forwards');
+        });
+        $imgLi.eq(1).find('.view .redBox span').on('animationend',function () {
             $imgLi.eq(1).find('.view .title').css('animation','LiMoveY .8s ease forwards');
             $imgLi.eq(1).find('.view .subtitle').css('animation','LiMoveY .8s ease forwards');
-            $imgLi.eq(1).find('.view .people').css('animation','changeOpacity .8s ease forwards');
+            $imgLi.eq(1).find('.view .tip').css('animation','LiMoveY .8s ease forwards');
+            $imgLi.eq(1).find('.view .people').css('animation','Liscale .8s ease forwards');
         });
         $imgLi.eq(1).find('.view .tip').on('animationend',function () {
-            $imgLi.eq(1).find('.view .name').css('animation','LiMoveY .8s ease forwards');
-        });
-        $imgLi.eq(1).find('.view .name').on('animationend',function () {
             $imgLi.eq(1).find('.view a.btn').css('animation','LiMoveX .8s ease forwards');
+            $imgLi.eq(1).find('.view .name').css('animation','LiMoveY .8s ease forwards');
         })
-
     }
 
 
