@@ -1,10 +1,10 @@
 /*轮播*/
-#banner{ display: none; position: relative; transition: .4s; height: 280px; overflow: hidden; perspective: 1200px; }
-#banner .imgTab{ position: relative; height: 100%; border-bottom: 2px solid #fff; }
-#banner .imgTab ul{ transition: .4s; position: relative; height: 100%; width: 500vw; overflow: hidden; }
-#banner .imgTab ul li{ position: relative; float: left; width: 100vw; height: 100%; }
+#banner{ display: none; position: relative; transition: .4s; height: 280px; overflow: hidden; width: 100vw; perspective: 1200px; }
+#banner .imgTab{ position: relative; height: 100%; border-bottom: 2px solid #fff;width: 100vw; }
+#banner .imgTab ul{ position: relative; height: 100%; width: 400%; overflow: hidden; display: flex; transition: .6s cubic-bezier(0.03, 0.98, 0.52, 0.99); }
+#banner .imgTab ul li{ position: relative; width: 100vw; height: 100%; overflow: hidden; }
 #banner .imgTab ul li:first-child{ background-color: #ff3c00; }
-#banner .imgTab ul li .view{ position: relative; width: auto; height: 100%; margin: 0 auto; padding-top: 80px; }
+#banner .imgTab ul li .view{ position: relative; z-index: 1; width: auto; height: 100%; margin: 0 auto; padding-top: 80px; transition: 4000ms cubic-bezier(0.03, 0.98, 0.52, 0.99); }
 /* list1 */
 /*左侧*/
 #banner .imgTab ul li .view p,
@@ -36,20 +36,17 @@
     /*list 2*/
 #banner .imgTab ul li:nth-of-type(2){ background: #040523; }
 #banner .imgTab ul li:nth-of-type(2) .view .redBox{
-    width: 218px;background-color: #ff3c00;position: absolute;
-    z-index:1;height: 0;
+    width: 218px;background-color: #ff3c00;position: absolute;  height: 0;
 }
 #banner .imgTab ul li:nth-of-type(2) .view .redBox span{
     display:block;color: #fff;font-size: 80px;font-family: 'Arial Black';position: absolute;
     bottom: 10px;left: 0;width:100%;text-align: center;opacity: 0;
 }
 #banner .imgTab ul li:nth-of-type(2) .view .title{
-    position: absolute;font-size: 80px;color: #fff;font-weight: lighter;top:220px;left: 234px;
-    z-index: 1;opacity: 0;
+    position: absolute;font-size: 80px;color: #fff;font-weight: lighter;top:220px;left: 234px; opacity: 0;
 }
 #banner .imgTab ul li:nth-of-type(2) .view .subtitle{
-    font-size: 58px;color: #fff;font-family: 'Arial Black';position: absolute;top:315px;left: 0;
-    z-index:1;opacity: 0;
+    font-size: 58px;color: #fff;font-family: 'Arial Black';position: absolute;top:315px;left: 0; opacity: 0;
 }
 #banner .imgTab ul li:nth-of-type(2) .view .tip{
     background-color: #ff3c00;position:absolute;top: 446px;z-index: 1;width: 0;height: 46px;
@@ -60,7 +57,7 @@
 }
 #banner .imgTab ul li:nth-of-type(2) .view a.btn{
     position: absolute; display: block; top: 538px; font-size: 24px; font-weight: lighter;opacity: 0;
-    color:#fff;border: 1px solid #fff; border-radius: 5px; padding: 5px 0 5px 16px;z-index: 1;
+    color:#fff;border: 1px solid #fff; border-radius: 5px; padding: 5px 0 5px 16px;
 }
 #banner .imgTab ul li:nth-of-type(2) .view a.btn i.icon{
     display: inline-block;width: 9px; height: 17px;
@@ -68,7 +65,7 @@
 }
 #banner .imgTab ul li:nth-of-type(2) .view .name{
     position: absolute;top: 124px; right: 82px; height: 183px; width: 183px;
-    background: url("../images/product/li2_line.png")no-repeat;z-index: 1;opacity: 0;
+    background: url("../images/product/li2_line.png")no-repeat;opacity: 0;
 }
 #banner .imgTab ul li:nth-of-type(2) .view .name .text1{
     position: absolute;top: 28px;color: #fff;left: 10px;font-size: 30px;font-weight: lighter;
@@ -79,13 +76,117 @@
 }
 #banner .imgTab ul li:nth-of-type(2) .view .people{
     position: absolute;width: 441px;height: 785px;top: 30px;right: 206px;opacity: 0;
-    background: url("../images/product/li2_man.png")no-repeat;z-index: 1;
+    background: url("../images/product/li2_man.png")no-repeat;
 }
 /*list 3*/
 #banner .imgTab ul li:nth-of-type(3){
-    background-color: #13154b;
+    background: #13154b url("../images/product/li3_el5.jpg")no-repeat center/cover;
+}
+#banner .imgTab ul li:nth-of-type(3) .view{ text-align: center; }
+#banner .imgTab ul li:nth-of-type(3) .view .title{
+    width: 632px;height: 114px;margin: 128px auto 0;opacity: 0;
+    background: url("../images/product/li3_el1.png")no-repeat;
+}
+#banner .imgTab ul li:nth-of-type(3) .view .subtitle{
+    width: 736px;height: 74px;background: url("../images/product/li3_el2.png")no-repeat;
+    margin: 28px auto 0;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(3) .view .EN{
+    opacity: 0;
+    font-family: 'Arial Black';font-size: 44px; color: #fff;text-align: center;line-height: 100%;
+}
+#banner .imgTab ul li:nth-of-type(3) .view .star{
+    width: 517px;height: 12px;background: url("../images/product/li3_el3.png")no-repeat;
+    margin: 10px auto 0;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(3) .view .tip{
+    margin: 14px auto 0;font-size: 18px; color: #fff; font-weight: lighter;
+    text-align: center;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(3) .view .tip i.time{
+    display: inline-block;width: 18px;height: 18px;margin-right: 5px;
+    background: url("../images/product/li3_el4.png")no-repeat;vertical-align:-2px;
+}
+#banner .imgTab ul li:nth-of-type(3) .view a.btn{
+    display: inline-block; font-size: 24px; font-weight: lighter;margin: 44px auto 0;
+    color:#fff;border: 1px solid #fff; border-radius: 5px; padding: 5px 0 5px 16px;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(3) .view a.btn i.icon{
+    display: inline-block;width: 9px; height: 17px;
+    background: url("../images/product/btn.png") no-repeat center/cover; margin: 0 16px;
 }
 
+/* list 4 */
+#banner .imgTab ul li:nth-of-type(4){
+    background-color: #ff3c00;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .title{
+    font-size: 89px;font-weight: lighter;color: #fff;position: absolute;
+    top: 234px;left: 0;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .title i.icon{
+    position: absolute;display: block;width: 34px;height: 33px;right: -34px;
+    top: 3px;background: url("../images/product/li4_el6.png")no-repeat;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .EN{
+    font-size: 42px;color: #fff;font-family: 'Arial Black';position: absolute;
+    top: 350px;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .subtitle{
+    position: absolute;top: 420px;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .subtitle b{
+    display: inline-block;width: 223px;height: 41px;background: url("../images/product/li4_el5.png")no-repeat;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .subtitle span{
+    display: inline-block;font-size: 32px;font-weight: lighter;color: #fff;vertical-align: bottom;
+}
+#banner .imgTab ul li:nth-of-type(4) .view a.btn{
+    position: absolute;top:504px;left: 0; border-radius: 5px;border: 1px solid #fff;color: #fff;
+    font-size: 24px;padding: 5px 0 5px 16px;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view a.btn i.icon{
+    display: inline-block;width: 9px; height: 17px;
+    background: url("../images/product/btn.png") no-repeat center/cover; margin: 0 16px;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .bottom{
+    position: absolute; width: 892px; height: 127px; bottom: 64px;right: -184px;
+    background: url("../images/product/li4_el2.png")no-repeat;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .line{
+    position: absolute;width: 710px; height: 197px;bottom: 92px;right: -92px;
+    background: url("../images/product/li4_el4.png")no-repeat;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .ball{
+    position: absolute;width: 710px;height: 377px;right: -150px;bottom: 86px;
+    background: url("../images/product/li4_el3.png")no-repeat;opacity: 0;
+}
+#banner .imgTab ul li:nth-of-type(4) .view .play{
+    position: absolute;width: 248px; height: 249px;bottom: 220px;right: 136px;
+    background: url("../images/product/li4_el1.png")no-repeat;opacity: 0;
+}
+/* question*/
+#banner .imgTab ul li:nth-of-type(4) .question{
+    position: absolute;z-index:3; right: -8vw;color: #333;text-align: center;
+    display: block;padding: 12px 12px; background: #fff url("../images/product/li4_el8.png")repeat;
+}
+#banner .imgTab ul li:nth-of-type(4) .question span{
+    display: block;position: absolute;width: 12px;height: 42px;
+    background: url("../images/product/li4_el7.png")no-repeat;top: 0;left: -12px;
+}
+#banner .imgTab ul li:nth-of-type(4) .question strong{
+    display: block;position: absolute;width: 10px;height: 42px;top:0;right: -10px;
+    background: url("../images/product/li4_el9.png")no-repeat;
+}
+
+@keyframes changeRight {
+    from{
+        right: -8vw;
+    }
+    to{
+        right: 100vw;
+    }
+}
 
 @keyframes LiMoveY {
     from{
@@ -97,7 +198,16 @@
         opacity: 1;
     }
 }
-
+@keyframes LiMoveT {
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 @keyframes LiMoveX {
     from{
         transform: translateX(-30px);
@@ -150,7 +260,7 @@
 #banner .btnTab ol li:last-child{ margin-right: 0; }
 #banner .btnTab ol li .maskLayer{ position: absolute; left: 0; top: 0; transition: .4s; width: 100%; height: 100%; background: rgba(0,0,0,.3);}
 #banner .btnTab ol li.on .maskLayer{ background: transparent; }
-#banner .btnTab ol .border{ position: absolute; transition: .4s; left: 0; z-index: 1; border: 4px solid #fff; width: 98px; height: 54px; border-radius: 5px; }
+#banner .btnTab ol .border{ position: absolute; transition: .6s cubic-bezier(0.03, 0.98, 0.52, 0.99); left: 0; z-index: 1; border: 4px solid #fff; width: 106px; height: 54px; border-radius: 5px; }
 #banner .btnTab ol .border i.icon{ display: block; position: absolute; top: -26px; left: 40%; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: #fff solid 10px; }
 #banner .btnTab ol li img{ width: 100%; height: 100%; }
 /*课程回放*/
@@ -173,8 +283,7 @@
 #main .courseList ul li{ margin: 0 0 23px 0; height: 290px; transition: .4s; width: auto; overflow: hidden; box-shadow: 0 2px 3px rgba(0,0,0,.2); }
 #main .courseList ul li a.poster{ display: block; position: relative; height: 205px; }
 #main .courseList ul li a.poster img{ width: 100%; height: 100%; }
-#main .courseList ul li a.poster .t1{
-    display: block;
+#main .courseList ul li a.poster .t1{    display: block;
     position: absolute;
     bottom: 0;
     right: 0;

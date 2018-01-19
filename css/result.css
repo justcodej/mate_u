@@ -41,8 +41,6 @@ a:link,a:visited{text-decoration:none; color:#999;}
 #progress .progress_to:link,#progress .progress_to:visited{color:#333;}
 
 
-/*line的样式*/
-.line{width:100%; height:2px; background-color:#c30d23;}
 /*底部样式*/
 
 .footer{width:100%; background-color:#202328; color:#999; position: relative; z-index: 0; }
