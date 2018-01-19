@@ -63,27 +63,23 @@
 
 // scroll
 (function () {
-
     // banner
     if( $(document,'body').scrollTop() <= 4000 ){
         $('#nav').css({
-            opacity:'1',
-            transform: 'translateY(0) scale(1)',
-            boxShadow: '0 2px 10px rgba(0,0,0,.2)'
+            transform: 'translateY(0)'
         });
-    };
+    }
     $('#nav').on('transitionend',function () {
         $('#main .banner .bg').css({
-            opacity:'1',
-            transform: 'translateY(0) scale(1)'
+            opacity:'1'
         });
         $('#main .banner .bg .title').css({
             opacity:'1',
-            transform: 'translateY(0) scale(1)'
+            transform: 'translateY(0)'
         });
         $('#main .banner .bg .subtitle').css({
             opacity:'1',
-            transform: 'translateY(0) scale(1)'
+            transform: 'translateY(0)'
         });
     });
     $('#main .banner .bg .subtitle').on('transitionend',function () {
@@ -97,9 +93,6 @@
         $('#main .banner .content .maskLayer').css('width','0');
     });
     // team
-
-
-
     $(document,'body').scroll(function () {
         //title&subtitle
         gdjz($('#main .team .content .title'),'scroll',100);
@@ -127,6 +120,16 @@
         gdjz($('#main .imgAd .content'),'scroll',100);
         gdjz($('#main .tip'),'scroll',100);
 
+        var ST = parseInt($(this).scrollTop()/8);
+        $('#main .team .content>.part').css({
+            transform: 'translateY('+(-ST)+'px)'
+        });
+        $('#main .team .content>.title').css({
+            transform: 'translateY('+(-ST)+'px)'
+        })
+
+
+
     });
     function gdjz(div,cssname,offset){
         var a,b,c,d;
@@ -136,21 +139,4 @@
         c=$(window).height();
         if(b+c>a)$((div)).addClass((cssname));
     }
-})();
-
-// 鼠标跟随
-(function () {
-    var oBanner = $("#main .banner").get(0);
-    var oBg = $('#main .banner .bg').get(0);
-    var x,y,w,h;
-    oBanner.onmousemove = function (e) {
-        e = e || event;
-        x = e.clientX;
-        y = e.clientY-80;
-        w = this.clientWidth/2;
-        h = (this.clientHeight-80)/2;
-        x > w?x=parseInt((x*1-w)*0.05):x=parseInt((x*-1-w)*0.05);
-        y > h?y=parseInt((y*1-h)*0.05):y=parseInt((y*-1-h)*0.05);
-
-    };
 })();
