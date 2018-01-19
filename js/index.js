@@ -2,22 +2,35 @@
 * @Author: Marte
 * @Date:   2018-01-06 16:02:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-12 18:29:49
+* @Last Modified time: 2018-01-19 10:44:17
 */
+
 /* 首页banner效果 */
 (function(){
     var banner_h=$('#index_banner').height();
-    $('#index_banner .overlay_box').css({'height':banner_h,'margin-top':-banner_h/2});
-    $("#index_banner").on('mouseenter',function(){
-        $('.banner_overlay_bg').eq(0).slideDown('400', function() {
-            $('#index_banner .banner_overlay .h2').css({'opacity':1}).find('.h2_overlay').animate({'width':0},function(){
-                $('.banner_pic').css({'opacity':1}).find('.pic_overlay').animate({'width':0},function(){
-                    $('#index_banner .banner_overlay h3').slideDown();
-                });
-            });
-        });
 
+    $('#demo1').css({'height':banner_h+100});
+    console.log(banner_h);
+    console.log($('#demo1').height());
+    $('video').click(function() {
+    if ($(this).hasClass('pause')) {
+    } else {
+        $("video").trigger("pause");
+        $(this).removeClass('play');
+        $(this).addClass('pause');
+        $('video').css({'opacity':0}).siblings().slideDown('slow',function(){
+
+        });
+        // $('#demo1').eq(0).slideDown();
+        }
     })
+    $('video').bind('error ended', function(){
+        $('video').css({'opacity':0}).siblings().slideDown('slow',function(){
+
+        });
+        // $('.banner_overlay_bg').eq(0).slideDown();
+    })
+
 
 })();
 

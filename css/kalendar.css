@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-09 11:59:55
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-10 16:18:36
+* @Last Modified time: 2018-01-16 11:21:11
 */
 /* banner 样式*/
 #banner{position:relative; background:url(../images/kalendar/common_bg.png) no-repeat; height:722px;}
@@ -14,5 +14,11 @@
 #banner .banner_pic4{position:absolute; left:900px; top:494px; z-index:0;}
 #banner .banner_txt1{font-size:24px; color:#fff; position:absolute; left:36px; top:94px; z-index:4;}
 #banner .banner_txt2{font-size:12px; color:#fff; position:absolute; left:36px; top:133px; z-index:4; width:324px;}
+#banner2{display:none;}
+#banner2 img{width:100%;}
+@media screen and (max-width:750px) {
+    #banner2{display:block;}
+    #banner{display:none;}
+}
 /* data 样式*/
 #data{padding-top:90px; position:relative; z-index:10; background-color:#fff;top:0; left:0;}

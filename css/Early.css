@@ -2,12 +2,14 @@
 * @Author: Marte
 * @Date:   2018-01-08 18:20:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-11 18:19:08
+* @Last Modified time: 2018-01-16 11:16:51
 */
 .bk{border:1px solid #000;}
 /* banner 样式*/
 
 #banner{ height:722px; background:url(../images/kalendar/common_bg.png) no-repeat;}
+#banner2{display:none;}
+#banner2 img{width:100%;}
 #banner .wrapper{width:1200px; height:722px; margin:0 auto; position:relative;}
 #banner .banner_pic1{position:absolute; left:728px; top:62px; z-index:5;}
 #banner .banner_pic2{position:absolute; left:30px; top:196px;}
@@ -16,6 +18,10 @@
 #banner .banner_pic5{position:absolute; left:932px; top:463px; z-index:4;}
 #banner .banner_txt1{font-size:24px; color:#fff; position:absolute; left:366px; top:266px; z-index:4;}
 #banner .banner_txt2{font-size:12px; color:#fff; position:absolute; left:366px; top:307px; z-index:4; width:324px;}
+@media screen and (max-width:750px) {
+    #banner2{display:block;}
+    #banner{display:none;}
+}
 /* 文章详情 */
 #article{height:844px; background:url(../images/Early/article_bg.jpg) no-repeat; padding-top:100px; position:relative;}
 #article .article_title{text-align:center;}

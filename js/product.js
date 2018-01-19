@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     var $btnLi = $('#banner .btnTab ol li');
     var $imgLi = $('#banner .imgTab ul li');
     var $imgUl = $('#banner .imgTab ul');
@@ -36,6 +36,7 @@
     window.onresize = function () {
         btnW = $btnLi[0].offsetWidth+22;
         imgW = $imgLi[0].offsetWidth;
+	console.log('12')
     };
 
 

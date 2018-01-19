@@ -7,90 +7,106 @@
     <link rel = "Shortcut Icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/result.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/perspectiveRules.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="js/screenresize.js"></script>
 </head>
 <body>
 <!-- 首页banner start-->
     <div class="index_banner" id="index_banner">
-        <video src="video/Color.mp4" autoplay="autoplay" controls>
+        <video src="video/xin.mp4" autoplay="autoplay">
         </video>
-        <div class="banner_overlay">
-            <img src='images/kalendar/common_bg.png' alt="" class="banner_overlay_bg" >
-            <div class="overlay_box">
-                <span class="h2">直播从这里开始
-                    <div class="h2_overlay"></div>
-                </span>
-                <div class="banner_pic">
-                    <img src="images/index/banner_logo.png" alt="" />
-                    <div class="pic_overlay"></div>
+        <div id="demo1" style="display:none;">
+            <img alt="" src="images/kalendar/common_bg.png" /">
+            <div id="particle-target" >
+            </div>
+            <div class="bn_box">
+                <div class="bn_wrapper">
+
+                    <div class="bn_text_box">
+                        <p class="bn_text">直播 从这里开始</p>
+                        <div class="bn_text_over"></div>
+                    </div>
+                    <div class="bn_pic_box">
+                        <img src="images/index/banner_logo.png" alt="" class="banner_logo">
+                    </div>
+                    <div class="bn_text2_box">
+                        <p class="bn_text2">只为这一刻</p>
+                    </div>
+                    <div class="shibo">
+                        <a href="http://xd01.777fan.cn/vip">免费试播</a>
+                    </div>
                 </div>
-                <h3>只为这一刻</h3>
             </div>
         </div>
     </div>
 <!-- 首页banner end-->
 <!-- 解决方案 start-->
-    <div class="in_method" id="in_method" data-scroll-reveal="enter bottom">
-        <h2 class="in_method_title">作为业内<span>领先的在线金融</span>教育服务商</h2>
-        <p class="in_method_middle">Mate·U</p>
-        <p class="in_method_last">帮您开启全新的服务传播模式</p>
+    <div class="in_method" id="in_method">
+        <h2 class="in_method_title" data-scroll-reveal="enter bottom after .1s">作为业内<span>领先的在线金融</span>教育服务商</h2>
+        <p class="in_method_middle" data-scroll-reveal="enter bottom after .2s">Mate·U</p>
+        <p class="in_method_last" data-scroll-reveal="enter bottom after .3s">帮您开启全新的服务传播模式</p>
     </div>
 <!-- 解决方案 end-->
 <!-- 团队成员 start-->
     <div class="team" id="team">
         <div class="container">
-            <div class="col-sm-6 team_title">团队成员<img src="images/index/to_bottom.png" alt="" / class="to_bottom"></div>
-            <div class="col-sm-6"></div>
+            <div class="row team_title">
+                <div class="col-sm-4">
+                    <img src="images/index/team_txt.png" alt="">
+                </div>
+                <div class="col-sm-2 team_wenzi">团队成员<img src="images/index/to_bottom.png" alt="" / class="to_bottom"></div>
+                <div class="col-sm-6"></div>
+            </div>
         </div>
         <div class="content">
             <ul>
-                <li>
-                    <div class="img"><img src="./images/index/team_wang.png" alt="wangmeng"></div>
+                <li data-scroll-reveal="enter bottom after .1s">
+                    <div class="img"><img src="./images/index/team_zhang.png" alt="wangmeng"></div>
                     <div class="info">
-                        <p class="t1">王猛</p>
-                        <p class="t2">首席分析师</p>
+                        <p class="t1">章健</p>
+                        <p class="t2">Mate·U产品总监</p>
                     </div>
                     <div class="hiddenImg">
-                        <img src="./images/index/team_small.png" alt="wangmeng">
-                        <p class="name">王猛</p>
-                        <p class="title">首席分析师</p>
+                        <img src="./images/index/team_zhang_s.png" alt="wangmeng">
+                        <p class="name">章健</p>
+                        <p class="title">Mate·U产品总监</p>
                     </div>
                     <div class="hiddenText">
                         <p>我们的制作团队不光在技术上处于行业前端，我们更注重将客户的产品表达的清楚与准确，我们大多是理科出身，在机械、游戏、电子、物理等各学科我们都有研究，能轻松理解客户的构思，所以我们能更好的将客户的意图表现出来。我们拥有自己的专业三维动画、建筑动画、虚拟现实和影视拍摄制作团队。我们不断创新与提高三维动画、建筑动画、虚拟现实的制作水准，运用尖端的三维动画技术、虚拟现实技术，不断满足客户对数字体验服务的需求.。</p>
                     </div>
                 </li>
-                <li>
-                    <div class="img"><img src="./images/index/team_wang.png" alt="wangmeng"></div>
+                <li data-scroll-reveal="enter bottom after .2s">
+                    <div class="img"><img src="./images/index/team_liu.png" alt="wangmeng"></div>
                     <div class="info">
-                        <p class="t1">王猛</p>
-                        <p class="t2">首席分析师</p>
+                        <p class="t1">柳乐</p>
+                        <p class="t2">Mate·U市场总监</p>
                     </div>
                     <div class="hiddenImg">
-                        <img src="./images/index/team_small.png" alt="wangmeng">
-                        <p class="name">王猛</p>
-                        <p class="title">首席分析师</p>
+                        <img src="./images/index/team_liu_s.png" alt="wangmeng">
+                        <p class="name">柳乐</p>
+                        <p class="title">Mate·U市场总监</p>
                     </div>
                     <div class="hiddenText">
                         <p>我们的制作团队不光在技术上处于行业前端，我们更注重将客户的产品表达的清楚与准确，我们大多是理科出身，在机械、游戏、电子、物理等各学科我们都有研究，能轻松理解客户的构思，所以我们能更好的将客户的意图表现出来。我们拥有自己的专业三维动画、建筑动画、虚拟现实和影视拍摄制作团队。我们不断创新与提高三维动画、建筑动画、虚拟现实的制作水准，运用尖端的三维动画技术、虚拟现实技术，不断满足客户对数字体验服务的需求.。</p>
                     </div>
                 </li>
-                <li>
-                    <div class="img"><img src="./images/index/team_wang.png" alt="wangmeng"></div>
+                <li data-scroll-reveal="enter bottom after .3s">
+                    <div class="img"><img src="./images/index/team_wu.png" alt="wangmeng"></div>
                     <div class="info">
-                        <p class="t1">王猛</p>
-                        <p class="t2">首席分析师</p>
+                        <p class="t1">吴晗</p>
+                        <p class="t2">Mate·U运营总监</p>
                     </div>
                     <div class="hiddenImg">
-                        <img src="./images/index/team_small.png" alt="wangmeng">
-                        <p class="name">王猛</p>
-                        <p class="title">首席分析师</p>
+                        <img src="./images/index/team_wu_s.png" alt="wangmeng">
+                        <p class="name">吴晗</p>
+                        <p class="title">Mate·U运营总监</p>
                     </div>
                     <div class="hiddenText">
                         <p>我们的制作团队不光在技术上处于行业前端，我们更注重将客户的产品表达的清楚与准确，我们大多是理科出身，在机械、游戏、电子、物理等各学科我们都有研究，能轻松理解客户的构思，所以我们能更好的将客户的意图表现出来。我们拥有自己的专业三维动画、建筑动画、虚拟现实和影视拍摄制作团队。我们不断创新与提高三维动画、建筑动画、虚拟现实的制作水准，运用尖端的三维动画技术、虚拟现实技术，不断满足客户对数字体验服务的需求.。</p>
                     </div>
                 </li>
-                <li>
+                <li data-scroll-reveal="enter bottom after .4s">
                     <div class="img"><img src="./images/index/team_wang.png" alt="wangmeng"></div>
                     <div class="info">
                         <p class="t1">王猛</p>
@@ -111,54 +127,54 @@
     </div>
 <!-- 团队成员 end-->
 <!-- 产业 start -->
-    <div class="indus" id="indus"  data-scroll-reveal="enter bottom">
+    <div class="indus" id="indus">
         <h3>Mate·U产业</h3>
         <ul class="indus_box clearfix" >
             <li>
                 <img src="images/index/indus_1.png" alt="">
                 <p>专业训练营</p>
-                <div class="inner"></div>
+
             </li>
             <li>
                 <img src="images/index/indus_2.png" alt="">
                 <p>财经日历</p>
-                <div class="inner"></div>
+
             </li>
             <li>
                 <img src="images/index/indus_3.png" alt="">
                 <p>股票专栏</p>
-                <div class="inner"></div>
+
             </li>
             <li>
                 <img src="images/index/indus_4.png" alt="">
                 <p>技术分析</p>
-                <div class="inner"></div>
+
             </li>
             <li>
                 <img src="images/index/indus_5.png" alt="">
                 <p>直播课堂</p>
-                <div class="inner"></div>
+
             </li>
             <li>
                 <img src="images/index/indus_6.png" alt="">
                 <p>自动化系统</p>
-                <div class="inner"></div>
+
             </li>
             <li>
                 <img src="images/index/indus_7.png" alt="">
                 <p>交易跟单</p>
-                <div class="inner"></div>
+
             </li>
             <li class="indus_last">
                 <img src="images/index/indus_8.png" alt="">
                 <p>导师团队</p>
-                <div class="inner"></div>
+
             </li>
         </ul>
     </div>
 <!-- 产业 end -->
 <!-- 金十数据 start -->
-    <div class="data" id="data"  data-scroll-reveal="enter bottom">
+    <div class="data" id="data">
         <div class="container">
             <div class="row">
                 <div class="col-xs-1"></div>
@@ -180,7 +196,7 @@
             </ul>
             <div class="new_cont_box">
                 <div class="container new_cont">
-                    <div class="row"  data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3 col-xs-12">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -193,7 +209,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row"  data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3">
                             <img src="images/index/new2.png" alt="">
                         </div>
@@ -206,7 +222,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row" data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3">
                             <img src="images/index/new3.png" alt="">
                         </div>
@@ -219,7 +235,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row" data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -232,7 +248,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row" data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -245,7 +261,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row" data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -258,7 +274,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row" data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -273,7 +289,7 @@
                     </div>
                 </div>
                 <div class="container new_cont" style="display:none;">
-                    <div class="row"  data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3 col-xs-12">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -286,7 +302,7 @@
                             <a class="new_details new_hover">详细内容</a>
                         </div>
                     </div>
-                    <div class="row"  data-scroll-reveal="enter bottom">
+                    <div class="row">
                         <div class="col-sm-3 col-xs-12">
                             <img src="images/index/new1.png" alt="">
                         </div>
@@ -332,6 +348,114 @@
         </div>
     </div>
 <!-- 合作伙伴 end -->
+<!-- footer start -->
+    <div class="addfooter" id="addfooter" >
+        <div class="footer_up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12 one">
+                        <img src="images/footer/footer_pic1.png" alt="">
+                        <span>全方位代理商解决方案</span>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 two">
+                        <img src="images/footer/footer_pic2.png" alt="">
+                        <span>明星导师</span>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 three">
+                        <img src="images/footer/footer_pic3.png" alt="">
+                        <span>1对1管家式服务</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_down">
+            <div class="container footer_down_box">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer_logo">
+                            <img src="images/footer/footer_pic4.png" alt="" />
+                        </div>
+                        <ul class="footer_wechat">
+                            <li>
+                                <img src="images/footer/footer_pic5.png" alt="" />
+                                <span>微信公众化</span>
+                            </li>
+                            <li>
+                                <img src="images/footer/footer_pic5.png" alt="" />
+                                <span>Mate·U网站</span>
+                            </li>
+                            <li>
+                                <img src="images/footer/footer_pic5.png" alt="" />
+                                <span>微信公众号</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                    <div class="col-sm-8">
+                        <ul class="footer_right">
+                            <li>
+                                <p class="footer_next_title">
+                                    <a href="#">关于Mate·U</a>
+                                </p>
+                                <p class="footer_next_cont">
+                                    <a href="#"><span class="footer_line"></span>我们的团队</a>
+                                </p>
+                            </li>
+                             <li>
+                                <p class="footer_next_title">
+                                    <a href="#">产品服务</a>
+                                </p>
+                                <p class="footer_next_cont">
+                                    <a href="#"><span class="footer_line"></span>非农狂欢夜</a>
+                                    <a href="#"><span class="footer_line"></span>决战eia</a>
+                                    <a href="#"><span class="footer_line"></span>线上体验式培训</a>
+                                    <a href="#"><span class="footer_line"></span>交易学堂</a>
+                                </p>
+                            </li>
+                             <li>
+                                <p class="footer_next_title">
+                                    <a href="#">交易数据</a>
+                                </p>
+                                <p class="footer_next_cont">
+                                    <a href="#"><span class="footer_line"></span>金融早参</a>
+                                    <a href="#"><span class="footer_line"></span>交易回顾</a>
+                                </p>
+                            </li>
+                             <li>
+                                <p class="footer_next_title">
+                                    <a href="#">财经日历</a>
+                                </p>
+
+                            </li>
+                             <li>
+                                <p class="footer_next_title">
+                                    <a href="#">市场新闻</a>
+                                </p>
+                                <p class="footer_next_cont">
+                                    <a href="#"><span class="footer_line"></span>全球新闻</a>
+                                    <a href="#"><span class="footer_line"></span>行业新闻</a>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer_shengming">
+                    <div class="col-sm-12 col-xs-12">
+                        Mate·U致力于提供合理、准确、完整的信息内容，但不保证个人直播间主播所提供信息的合理性、准确性和完整性，也不意味着Mate·U赞同其观点，因此平台将不对因信息的不合理、不准确或遗漏导致的任何损失或损害承担责任。本站所有信息仅供参考，不作为您交易或投资的依据，如自行使用主播观点造成经济损失，本站概不负责，亦不承担任何法律责任。Mate·U不提供代客理财等非法业务，若您发现有私下进行收费咨询或推销投资产品的主播，可向Mate·U客服举报。
+                    </div>
+                </div>
+                <div class="row footer_bottom">
+                    <div class="col-sm-12 col-xs-12">
+                        © Copyright 2017 - Mate·U Ltd.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_line2"></div>
+
+    </div>
+<!-- footer end -->
 <!-- 浮动导航 start-->
     <div class="fixed_nav" id="fixed_nav">
         <ul class="nav_box">
@@ -362,6 +486,7 @@
         </ul>
     </div>
 <!-- 浮动导航 end -->
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/scrollReveal.min.js"></script>
@@ -370,6 +495,38 @@
         'use strict';
         window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
       })();
-    </script>
+</script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.logosDistort.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script>
+    var particles = true,
+        particleDensity,
+        options = {
+            effectWeight: 1,
+            outerBuffer: 1.08,
+            elementDepth: 220
+        };
+
+    $(document).ready(function() {
+
+        $("#demo1").logosDistort(options);
+
+        if (particles) {
+            particleDensity = window.outerWidth * 7.5;
+            if (particleDensity < 13000) {
+                particleDensity = 13000;
+            } else if (particleDensity > 20000) {
+                particleDensity = 20000;
+            }
+            return $('#particle-target').particleground({
+                dotColor: '#ff663f',
+                lineColor: 'rgb(235,85,47)',
+                density: particleDensity.toFixed(0),
+                parallax: false
+            });
+        }
+    });
+</script>
 </body>
 </html>
