@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-06 16:02:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-19 18:20:02
+* @Last Modified time: 2018-01-22 16:31:40
 */
 
 /* 首页banner效果 */
@@ -10,8 +10,6 @@
     var banner_h=$('#index_banner').height();
 
     $('#demo1').css({'height':banner_h+100});
-    console.log(banner_h);
-    console.log($('#demo1').height());
     $('video').click(function() {
     if ($(this).hasClass('pause')) {
     } else {
@@ -19,27 +17,159 @@
         $(this).removeClass('play');
         $(this).addClass('pause');
         $('video').css({'opacity':0}).siblings().slideDown('slow',function(){
-
+            $('.bn_text_over').animate({'width':'100%'},'400',function(){
+                $('.bn_text_over').siblings().css({'opacity':1});
+                $('.bn_text_over').css({'right':0});
+                $('.bn_text_over').animate({'width':'0'},'400',function(){
+                    $('.bn_pic_over').animate({'width':'100%'},'400',function(){
+                        $('.bn_pic_over').siblings().css({'opacity':1});
+                        $('.bn_pic_over').css({'right':0});
+                        $('.bn_pic_over').animate({'width':'0'},'400',function(){
+                            $('.bn_text2_over').animate({'width':'100%'},'400',function(){
+                                $('.bn_text2_over').siblings().css({'opacity':1});
+                                $('.bn_text2_over').css({'right':'0'});
+                                $('.bn_text2_over').animate({'width':'0'},function(){
+                                    $('.shibo_over').animate({'width':'0'},'400',function(){
+                                        $('.shibo_over').animate({'width':'100%'},'400',function(){
+                                            $('.shibo_over').siblings().css({'opacity':1});
+                                            $('.shibo_over').css({'right':'0'});
+                                            $('.shibo_over').animate({'width':'0'})
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
         });
-        // $('#demo1').eq(0).slideDown();
         }
     })
     $('video').bind('error ended', function(){
         $('video').css({'opacity':0}).siblings().slideDown('slow',function(){
-
+            $('.bn_text_over').animate({'width':'100%'},'400',function(){
+                $('.bn_text_over').siblings().css({'opacity':1});
+                $('.bn_text_over').css({'right':0});
+                $('.bn_text_over').animate({'width':'0'},'400',function(){
+                    $('.bn_pic_over').animate({'width':'100%'},'400',function(){
+                        $('.bn_pic_over').siblings().css({'opacity':1});
+                        $('.bn_pic_over').css({'right':0});
+                        $('.bn_pic_over').animate({'width':'0'},'400',function(){
+                            $('.bn_text2_over').animate({'width':'100%'},'400',function(){
+                                $('.bn_text2_over').siblings().css({'opacity':1});
+                                $('.bn_text2_over').css({'right':'0'});
+                                $('.bn_text2_over').animate({'width':'0'},function(){
+                                    $('.shibo_over').animate({'width':'0'},'400',function(){
+                                        $('.shibo_over').animate({'width':'100%'},'400',function(){
+                                            $('.shibo_over').siblings().css({'opacity':1});
+                                            $('.shibo_over').css({'right':'0'});
+                                            $('.shibo_over').animate({'width':'0'})
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
         });
         // $('.banner_overlay_bg').eq(0).slideDown();
     })
-
 
 })();
 
 
 /* 团队成员 */
+// (function(){
+//     var h=$("#team .team_big").height();
+//     var w=$("#team .team_big").width();
+//     $("#team .team_hover_cont").css({'height':h});
 
+//     $('.team_box').hover(function(){
+//         // $(this).find($('.team_bg')).fadeOut();
+//         $(this).find($('.team_hover_cont')).slideDown();
+//         $(this).find($('.team_small')).fadeIn();
+//         $(this).find($('.team_name')).animate({'margin-top':'50px'}).css({'color':'#e84117'})
+//     },function(){
+//         $(this).find($('.team_hover_cont')).stop().slideUp();
+//         $(this).find($('.team_small')).stop().fadeOut();
+//         $(this).find($('.team_name')).stop().animate({'margin-top':'10px'}).css({'color':'#333'})
+//     })
+
+// })();
 (function () {
     $('#team .content ul li').mouseenter(function () {$(this).addClass('hold')}).mouseleave(function () {$(this).removeClass('hold')});
 })();
+/* 团队成员 */
+(function($){
+        $.fn.extend({
+            show : function(div){
+                var w = this.width(),
+                        h = this.height(),
+                        xpos = w/2,
+                        ypos = h/2,
+                        eventType = "",
+                        direct = "";
+                this.css({"overflow" : "hidden", "position" : "relative"});
+                div.css({"position" : "absolute", "top" : this.width()});
+                this.on("mouseenter mouseleave", function(e){
+                    var oe = e || event;
+                    var x = oe.offsetX;
+                    var y = oe.offsetY;
+                    var angle = Math.atan((x - xpos)/(y - ypos)) * 180 / Math.PI;
+                    if(angle > -45 && angle < 45 && y > ypos){
+                        direct = "down";
+                    }
+                    if(angle > -45 && angle < 45 && y < ypos){
+                        direct = "up";
+                    }
+                    if(((angle > -90 && angle <-45) || (angle >45 && angle <90)) && x > xpos){
+                        direct = "right";
+                    }
+                    if(((angle > -90 && angle <-45) || (angle >45 && angle <90)) && x < xpos){
+                        direct = "left";
+                    }
+                    move(e.type, direct)
+                });
+                function move(eventType, direct){
+                    if(eventType == "mouseenter"){
+                        switch(direct){
+                            case "down":
+                                div.css({"left": "0px", "top": h}).stop(true,true).animate({"top": "0px"}, "fast");
+                                break;
+                            case "up":
+                                div.css({"left": "0px", "top": -h}).stop(true,true).animate({"top": "0px"}, "fast");
+                                break;
+                            case "right":
+                                div.css({"left": w, "top": "0px"}).stop(true,true).animate({"left": "0px"}, "fast");
+                                break;
+                            case "left":
+                                div.css({"left": -w, "top": "0px"}).stop(true,true).animate({"left": "0px"}, "fast");
+                                break;
+                        }
+                    }else{
+                        switch(direct){
+                            case "down":
+                                div.stop(true,true).animate({"top": h}, "fast");
+                                break;
+                            case "up":
+                                div.stop(true,true).animate({"top": -h}, "fast");
+                                break;
+                            case "right":
+                                div.stop(true,true).animate({"left": w}, "fast");
+                                break;
+                            case "left":
+                                div.stop(true,true).animate({"left": -w}, "fast");
+                                break;
+                        }
+                    }
+                }
+            }
+        });
+    })(jQuery)
+    $("#indus .indus_box li").each(function(i){
+    $(this).show($(".inner").eq(i));
+});
 /* 市场新闻 */
 (function(){
     (function(){
