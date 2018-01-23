@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-05 16:55:32
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-22 17:31:09
+* @Last Modified time: 2018-01-23 17:32:01
 */
 .bk{border:1px solid red;}
 *{margin:0; padding:0;}
@@ -58,7 +58,7 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
     #in_method{top:80px;}
 }
 /* 团队成员样式*/
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1300px) {
     #team{height:800px;}
 }
 #team{width:100%;background:url(../images/index/picture_tmbackground.png) no-repeat;}
@@ -126,7 +126,7 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
     color: #fff;
     transition: .4s;
     font-size: 12px;
-    padding: 34px 14px 46px;
+    padding: 34px 20px 46px;
     width: 100%;
 }
 #team .content ul li .hiddenImg{
@@ -140,12 +140,28 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
 #team .content ul li .hiddenImg img{
     position: relative;
     z-index: 1;
+    width:82px;
 }
 #team .content ul li.hold .hiddenImg{
     bottom: 0;
 }
 #team .content ul li.hold .hiddenText{
     top: 0;
+}
+#team .content ul li.hold .hiddenText span{
+    margin-right:5px;
+}
+#team .content ul li.hold .hiddenText .team_zhang{
+    padding-bottom:60px;
+}
+#team .content ul li.hold .hiddenText .team_liu{
+    padding-bottom:10px;
+}
+#team .content ul li.hold .hiddenText .team_wu{
+    padding-bottom:45px;
+}
+#team .content ul li.hold .hiddenText .team_wang{
+    padding-bottom:30px;
 }
 #team .content ul li .hiddenImg img{
     display: block;
@@ -169,7 +185,7 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
 #indus .indus_box{padding-left:2%;}
 #indus .indus_box li{float:left; width:12%; height:140px; text-align:center; transition:all .5s; position:relative; }
 #indus .indus_box .inner{width:100%; height:100%; background-color:#e84117;}
-#indus .indus_box li img{margin-top:32px; position:relative; z-index:10; transition:all .5s;}
+#indus .indus_box li img{margin-top:32px; position:relative; z-index:10; transition:all .1s;}
 #indus .indus_last{border-right:0!important;}
 #indus p{color:#fff; position:relative; z-index:10;}
 @media screen and (max-width:1400px) {
@@ -178,7 +194,7 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
     #indus .indus_box li:hover{background-color:#e84117;}
 }
 @media screen and (min-width:1400px) {
-    #indus .indus_box li:hover{background-color:#e84117;transform:scale(1.2)!important;margin-top:20px;}
+    #indus .indus_box li:hover{background-color:#e84117!important;transform:scale(1.2)!important;margin-top:20px;}
 }
 /* 市场新闻 */
 
@@ -234,7 +250,8 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
    #addfooter .footer_down{background-color:#1f1e21;}
 }
 /* 浮动导航 */
-#fixed_nav{position:fixed; right:0; top:200px; z-index:101;}
+#fixed_nav{position:fixed; right:0; top:200px; z-index:101; box-shadow:0 0 10px rgba(0,0,0,.25);}
+#fixed_nav>ul{margin-bottom:0!important;}
 #fixed_nav .nav_box>li{width:80px; height:80px; background-color:#fff; text-align:center; padding-top:22px; position:relative; font-size:12px; color:#999; cursor:pointer;}
 #fixed_nav .nav_box>li p{padding-top:10px;}
 #fixed_nav .nav_box .fixed_first{background-color:#e84117; color:#fff;}
