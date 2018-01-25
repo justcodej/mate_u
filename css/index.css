@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-05 16:55:32
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-25 16:26:09
+* @Last Modified time: 2018-01-25 17:31:45
 */
 .bk{border:1px solid red;}
 *{margin:0; padding:0;}
@@ -222,7 +222,7 @@ body{font-family: "微软雅黑";color:#333;overflow-y:scroll; background-color:
 #MKT_new .new_cont_right .new_details{float:right; width:80px; height:30px; line-height:30px; border:1px solid #e6e6e6; text-align:center; margin-top:50px;}
 #MKT_new .new_cont_right a.new_details:link,#MKT_new .new_cont_right a.new_details{color:#666; text-decoration:none;}
 #MKT_new .new_cont_right a.new_details:hover{color:#fff; background-color:#e84117;}
-#MKT_new .new_cont .row .border{position:absolute;left:15px; top:0; height:100%; background-color: #eee;
+#MKT_new .new_cont .row .border{position:absolute;left:15px; top:0; height:100%; background-color: #f8f8f8;
     transition: 1s cubic-bezier(.51,.01,0,1); z-index:1;}
 
 @media screen and (max-width:1400px) {
