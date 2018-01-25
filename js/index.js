@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-06 16:02:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-24 17:14:31
+* @Last Modified time: 2018-01-25 15:38:48
 */
 /* 浮动导航返回顶部 */
 (function(){
@@ -15,7 +15,7 @@
 (function(){
     function move(){
         var banner_h=$('#index_banner').height();
-        $('#demo1').css({'height':banner_h+80});
+        $('#demo1').css({'height':banner_h+100});
         $('video').click(function() {
         if ($(this).hasClass('pause')) {
         } else {
@@ -95,7 +95,7 @@
 
     if(isie){
         $('body,html').css({'width':'1920px','overflow-x':'hidden'});
-        $('#demo1 .common_bg').css({'position':'absolute','height':'100%'})
+        $('#demo1 .common_bg').css({'position':'absolute','height':'100%'});
         move();
     }else{
         var particles = true,
@@ -133,7 +133,6 @@
 })();
 
 
-/* 产业 */
 
 /* 团队成员 */
 (function () {
@@ -153,3 +152,4 @@
     })();
 })()
 /* 浮动导航 */
+
